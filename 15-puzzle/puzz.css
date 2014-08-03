@@ -11,16 +11,47 @@ h2{
 	text-align:center;
 	font-weight:bold;
 	font-size:xx-large;
+	margin-top: 0px;
 }
 
 .main-div{
-	margin-top:8%;
+	margin-top:2%;
 	width:100%;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
 }
 
+.share{
+	text-align: center;
+}
+
+.share-on-link{
+	text-decoration: none;
+	display: inline-block;
+	padding: 4px 2px 0px 2px;
+	border-radius: 3px;
+	height: 30px;
+	width: 80px;
+}
+
+.share-on-facebook{
+	background-color:rgb(59, 85, 200);
+	color: #ffffff;
+
+}
+
+.share-on-twitter{
+	background-color:#39D;
+	color: #ffffff;
+
+}
+
+.share-on-googleplus{
+	background-color:rgb(224, 63, 45);
+	color: #ffffff;
+
+}
 .p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11,.p12,.p13,.p14,.p15,.p16{
 	height:60px;
 	margin:2px 0px 1px -1px;
@@ -33,7 +64,7 @@ h2{
 }
 
 .rand,.rand2,.subm{
-	height:45px;
+	height:43px;
 	width:135px;
 	background-color:#0077FF;
 	font-size:20px;
@@ -47,7 +78,7 @@ h2{
 
 .subm {
 	width:275px;
-	margin:20px 0 7px 0;
+	margin:15px 0 7px 0;
 }
 
 .rand:hover,.rand2:hover,.subm:hover{
@@ -61,8 +92,9 @@ h2{
 	color: gray;
 	text-align: center;
 	font-size: 80%;
+	margin-top: 20px;
+	position: fixed;
 	clear: both;
-	position:fixed;
 	bottom:25px;
 	left:0;
 	width:100%;	
