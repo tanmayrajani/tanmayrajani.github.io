@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Play 15 Puzzle</title>
+<link rel="stylesheet" href="puzz.css">
+<link rel="icon" href="logo.png">
+</head>
+<body>
+<h2>15 Puzzle Game (beta)</h2>
+<div class="main-div">
+	Time : <span id="stopwatch">00:00:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves : <span id="moves">0</span><br/><br/>
+	<button class="p1" data-check1="2" data-check2="5" data-val="1">1</button>
+	<button class="p2" data-check1="6" data-check2="1" data-check3="3" data-val="2">2</button>
+	<button class="p3" data-check1="7" data-check2="2" data-check3="4" data-val="3">3</button>
+	<button class="p4" data-check1="8" data-check2="3" data-val="4">4</button>
+<!--1st row --><br/>
+	<button class="p5" data-check1="9" data-check2="6" data-check3="1" data-val="5">5</button>
+	<button class="p6" data-check1="10" data-check2="7" data-check3="5" data-check4="2" data-val="6">6</button>
+	<button class="p7" data-check1="11" data-check2="8" data-check3="6" data-check4="3" data-val="7">7</button>
+	<button class="p8" data-check1="12" data-check2="7" data-check3="4" data-val="8">8</button>
+<!--2nd row --><br/>
+	<button class="p9" data-check1="13" data-check2="10" data-check3="5" data-val="9">9</button>
+	<button class="p10" data-check1="14" data-check2="11" data-check3="9" data-check4="6" data-val="10">10</button>
+	<button class="p11" data-check1="15" data-check2="12" data-check3="10" data-check4="7" data-val="11">11</button>
+	<button class="p12" data-check1="16" data-check2="11" data-check3="8" data-val="12">12</button>
+<!--3rd row --><br/>
+	<button class="p13" data-check1="9" data-check2="14" data-val="13">13</button>
+	<button class="p14" data-check1="15" data-check2="13" data-check3="10" data-val="14">14</button>
+	<button class="p15" data-check1="16" data-check2="14" data-check3="11" data-val="15">15</button>
+	<button class="p16" data-check1="15" data-check2="12" data-val="16">__</button>
+<br/>
+<!--4th row -->
+<button class="subm" onclick="Example1.resetStopwatch();">Submit</button><br/>
+<button class="rand" onclick="Example1.resetStopwatch();">Shuffle it !!</button>&nbsp;
+<button class="rand2" onClick="OpenInNewTab();">How to Play</button><br>
+</div>
+   
+<footer id="footer">
+		&copy;&nbsp;2014 All Rights Reserved by <a href="http://www.youtube.com/channel/UCuVImn_IO0vvubOwQpFN43g" target="_blank">Tanmay Rajani</a>.
+</footer>
+
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script src="jquery.timer.js"></script>
+<script src="puzzjs.js"></script>
+<Script Language='Javascript'>
+/*document.write(unescape('%3C%73%63%72%69%70%74%20%73%72%63%3D%27%68%74%74%70%3A%2F%2F%61%6A%61%78%2E%67%6F%6F%67%6C%65%61%70%69%73%2E%63%6F%6D%2F%61%6A%61%78%2F%6C%69%62%73%2F%6A%71%75%65%72%79%2F%31%2E%38%2E%33%2F%6A%71%75%65%72%79%2E%6D%69%6E%2E%6A%73%27%3E%3C%2F%73%63%72%69%70%74%3E%0A%3C%73%63%72%69%70%74%20%74%79%70%65%3D%22%74%65%78%74%2F%6A%61%76%61%73%63%72%69%70%74%22%20%73%72%63%3D%22%73%63%72%69%70%74%73%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E%0A%3C%73%63%72%69%70%74%20%73%72%63%3D%27%70%75%7A%7A%6A%73%2E%6A%73%27%3E%3C%2F%73%63%72%69%70%74%3E'));*/
+</Script>
+
+</body>
+</html>
