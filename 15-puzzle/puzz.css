@@ -93,7 +93,6 @@ h2{
 	text-align: center;
 	font-size: 80%;
 	margin-top: 20px;
-	position: fixed;
 	clear: both;
 	bottom:25px;
 	left:0;
@@ -105,9 +104,13 @@ h2{
 }
 
 @media screen and (max-width:768px){
+
+	h2{
+		font-size: x-large;
+	}
 	.p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11,.p12,.p13,.p14,.p15,.p16{
-		height:30px;
-		width:30px;
+		height:60px;
+		width:60px;
 	}
 	
 	#expList + ul,#expList > li {
@@ -116,5 +119,11 @@ h2{
 	
 	#listContainer{
 		visibility:hidden;
+	}
+}
+
+@media screen and (min-width:590px){
+	#footer{
+		position: fixed;
 	}
 }
