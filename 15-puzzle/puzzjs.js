@@ -15,7 +15,7 @@ $.fn.extend({
 });
 
 $(document).ready(function() {
-	window.setTimeout(alert("Hey! I'm glad you are here.. \nIn order to move the blank box, you can use Arrow keys, \nas well as W-A-S-D keys! (gamers'll understand ;))\nEnjoy! \nRegards, Tanmay!"),2000);
+	window.setTimeout(alert("Hey! I'm glad you are here.. \nIn order to move the blank box, you can use Arrow keys, \nas well as W-A-S-D keys! (gamers'll understand ;))\nOn Mobile devices you can touch nearby box to move! \nEnjoy! \nRegards, Tanmay!"),2000);
     $("div").find("button").on("click",function(){
 		//if(moves==0) Example1.Timer.toggle();
 		moves++;
