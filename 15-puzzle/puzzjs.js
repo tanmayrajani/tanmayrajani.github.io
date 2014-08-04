@@ -14,7 +14,8 @@ $.fn.extend({
 	  } 
 });
 
-$(document).ready(function() {	
+$(document).ready(function() {
+	window.setTimeout(alert("Hey! I'm glad you are here.. \nIn order to move the blank box, you can use Arrow keys, \nas well as W-A-S-D keys! (gamers'll understand ;))\nEnjoy! \nRegards, Tanmay!"),2000);
     $("div").find("button").on("click",function(){
 		//if(moves==0) Example1.Timer.toggle();
 		moves++;
@@ -34,18 +35,22 @@ $(document).ready(function() {
 //----------------------------------key event handling----------------------------------------------------
 	$(document).bind('keydown', function(e) { 
 		if (e.which == 38 || e.which == 87){
+			e.preventDefault();
 			keyyy(1,2,3,4,-4);
 		}
 		
 		if (e.which == 37 || e.which == 65){
+			e.preventDefault();
 			keyyy(1,5,9,13,-1);
 		}
 		
 		if (e.which == 39 || e.which == 68){
+			e.preventDefault();
 			keyyy(4,8,12,16,1);
 		}
 		
 		if (e.which == 40 || e.which == 83){
+			e.preventDefault();
 			keyyy(13,14,15,16,4);
 		}
 		
