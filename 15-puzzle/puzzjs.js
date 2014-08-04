@@ -63,7 +63,7 @@ $(document).ready(function() {
 		}
 	});
 //-----------------------------------------------------------------------------------------------------------
-var	shuffle = function(v){
+	shuffle = function(v){
 		for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
 			return v;
 	};
@@ -109,11 +109,11 @@ var	shuffle = function(v){
 		var shuffled_a = shuffle(a);
 		for(var i=1;i<17;++i)
 			$(this_).parent().find('.p'+i).text(a[i-1]);
-		if(not_solvable(shuffled_a)) shuff_mine(this_);
+		if(not_solvable(this_,shuffled_a)) shuff_mine(this_);
 	}
 	
 	// not_solvable(this_,a) returns true if not solvable
-	function not_solvable(a){
+	function not_solvable(this_,a){
 		var less=0;
 		for(var i=0;i<15;++i){
 			if(a[i]!="__"){
@@ -124,7 +124,7 @@ var	shuffle = function(v){
 				less+=count;
 			}
 		}
-		for(i=0;i<16;++i){
+		for(var i=0;i<16;++i){
 			if(a[i]=="__"){
 				var x = i;
 				if((x >= 0 && x < 4) || (x > 7 && x < 12)){
@@ -132,7 +132,7 @@ var	shuffle = function(v){
 					return true;
 				}
 				else{
-					if(less % 2 === 0) return false;
+					if(less % 2 == 0) return false;
 					return true;
 				}
 			}
@@ -141,14 +141,18 @@ var	shuffle = function(v){
 	
 	shuff_mine($(this).children().children());
 	
-	$("html").bind("contextmenu",function(){
-		
+	$("html").bind("contextmenu",function(e){
+		//alert('Sorry, You are not allowed to do this !! :P');
        return false;
     }); 
 	
 	$('html').disableSelection();
 });
 
+function OpenInNewTab(){
+  var win=window.open('http://www.wikihow.com/Solve-a-Fifteen-Puzzle', '_blank');
+  win.focus();
+}
 
 //------------------------------for timer ---------------------------------------------------
 
@@ -164,7 +168,7 @@ function formatTime(time) {
     return (min > 0 ? pad(min, 2) : "00") + ":" + pad(sec, 2) + ":" + hundredths;
 }
 
-var Example1 = function() {
+var Example1 = new (function() {
     var $stopwatch, // Stopwatch element on the page
         incrementTime = 70, // Timer speed in milliseconds
         currentTime = 0, // Current time in hundredths of a second
@@ -181,5 +185,4 @@ var Example1 = function() {
         this.Timer.stop().once();
     };
     $(init);
-};
-/*function pad(e,t){var n=""+e;while(n.length<t){n="0"+n}return n}function formatTime(e){var t=parseInt(e/6e3),n=parseInt(e/100)-t*60,r=pad(e-n*100-t*6e3,2);return(t>0?pad(t,2):"00")+":"+pad(n,2)+":"+r}var moves=0;$.fn.extend({disableSelection:function(){this.each(function(){if(typeof this.onselectstart!="undefined"){this.onselectstart=function(){return false}}else if(typeof this.style.MozUserSelect!="undefined"){this.style.MozUserSelect="none"}else{this.onmousedown=function(){return false}}})}});$(document).ready(function(){function t(e){var t=0;for(var n=1;n<16;++n)if(e.parent().find(".p"+n).text()!=n){t=2;break}if(t!=2)return true;return false}function n(t){var i=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,"__"];var s=e(i);for(var o=1;o<17;++o)$(t).parent().find(".p"+o).text(i[o-1]);if(r(s))n(t)}function r(e){var t=0;for(var n=0;n<15;++n){if(e[n]!="__"){for(var r=n+1,i=0;r<16;++r){if(e[r]=="__"||e[r]>e[n])continue;else if(e[r]<e[n])i++}t+=i}}for(n=0;n<16;++n){if(e[n]=="__"){var s=n;if(s>=0&&s<4||s>7&&s<12){if(t%2==1)return false;return true}else{if(t%2===0)return false;return true}}}}$("div").find("button").on("click",function(){function t(e,t){var n=t.text();t.text("__");t.parent().find(".p"+t.data(e)).text(n)}moves++;$(document).find("#moves").html(moves);$('div > button:contains("__")').toggleClass(".blacky");for(var e=1;e<5;++e){if($(".p"+$(this).data("check"+e)).text()=="__"){t("check"+e,$(this))}}});$(document).bind("keydown",function(e){function t(e,t,n,r,i){moves++;$(document).find("#moves").html(moves);var s=$('div > button:contains("__")').data("val");if(s!=e&&s!=t&&s!=n&&s!=r){var o=s+i;var u=$("div > button[data-val="+o+"]").text();$('div > button:contains("__")').text(u);$("div > button[data-val='"+o+"']").text("__")}}if(e.which==38||e.which==87){t(1,2,3,4,-4)}if(e.which==37||e.which==65){t(1,5,9,13,-1)}if(e.which==39||e.which==68){t(4,8,12,16,1)}if(e.which==40||e.which==83){t(13,14,15,16,4)}});var e=function(e){for(var t,n,r=e.length;r;t=parseInt(Math.random()*r),n=e[--r],e[r]=e[t],e[t]=n);return e};$("div").find(".rand").on("click",function(){if(confirm("You sure you want to shuffle it?\nAll your progress will be lost !!")){moves=0;$(document).find("#moves").html(moves);n($(this));Example1.Timer.toggle()}});$("div").find(".subm").on("click",function(){if(t($(this))){alert("You solved in "+moves+" moves.\nTime taken is "+$("#stopwatch").text()+".\nCongrats BTW !!");moves=0;$(document).find("#moves").html(moves);n($(this))}else{alert("Its OK my friend\nHard Luck This time!! :(");moves=0;$(document).find("#moves").html(moves);n($(this))}Example1.Timer.toggle()});n($(this).children().children());$("html").bind("contextmenu",function(){return false});$("html").disableSelection()});var Example1=function(){var e,t=70,n=0,r=function(){e.html(formatTime(n));n+=t/10},i=function(){e=$("#stopwatch");Example1.Timer=$.timer(r,t,true)};this.resetStopwatch=function(){n=0;this.Timer.stop().once()};$(i)}*/
+});
