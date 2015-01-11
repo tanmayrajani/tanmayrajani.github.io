@@ -27,7 +27,7 @@ var palette = {
 var nodes = [
       { name: "PHP", target: [1,2,5,13]},
       { name: "MySQL", target: [0,4,10,11,12]},
-      { name: "Apache", target: [0]},
+      { name: "Apache", target: [0,3]},
       { name: "nginx", target: [2]},
       { name: "PostgreSQL", target: [1,10,11,12]},
       { name: "Java", target: [0,6,7,8,9,13]},
