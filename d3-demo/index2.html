@@ -6,23 +6,25 @@
     <script type="text/javascript" src="d3.min.js"></script>
     <link rel="stylesheet" href="base.css">
     <style type="text/css">
-        #graph { width:1200px;height:500px; border:3px solid black;border-radius:12px; margin:auto; #background-color: #FF9933 }
+        #graph { width:1200px;height:500px; border:3px solid black;border-radius:12px; margin:auto; #background-color: #FF9933; margin-top: 20px; }
     </style>
 </head>
 <body>
-<div id="graph"></div>
+<div id="graph"></div><hr><hr>
+  <div id="relation"></div>
 </body>
 <script type="text/javascript">
 
-var palette = {
+
+function myGraph(el) {
+
+	var palette = {
       "lightgray": "#819090",
       "gray": "#708284",
       "mediumgray": "#536870",
       "darkgray": "#475B62",
-
       "darkblue": "#0A2933",
       "darkerblue": "#042029",
-
       "paleryellow": "#FCF4DC",
       "paleyellow": "#EAE3CB",
       "yellow": "#A57706",
@@ -33,9 +35,8 @@ var palette = {
       "blue": "#2176C7",
       "green": "#259286",
       "yellowgreen": "#738A05"
-  }
+  	}
 
-function myGraph(el) {
 
     // Add and remove elements on the graph object
     this.addNode = function (id) {
@@ -104,7 +105,7 @@ function myGraph(el) {
             .data(links, function(d) { return d.source.id + "-" + d.target.id; });
 
         link.enter().append("line")
-            .attr('stroke', palette.gray)
+            .attr('stroke', palette.blue)
 
         link.exit().remove();
 
@@ -116,24 +117,24 @@ function myGraph(el) {
             .call(force.drag);
 
         nodeEnter.append("circle")
-            .attr('cx', function(d) { return d.x; })
-			.attr('cy', function(d) { return d.y; })
-			.attr('r', 7)
-            .attr('fill', function(d, i) {
-				if (i%2==0) { return palette.pink }
-				else { return palette.blue }
-			})
+          .attr('cx', function(d) { return d.x; })
+          .attr('cy', function(d) { return d.y; })
+          .attr('r', 7)
+          .attr('fill', palette.blue)
 
         nodeEnter.append("text")
         	.attr('font-family', 'Roboto Slab')
-			.attr('fill', function(d, i) {
-				return palette.yellowgreen
-			})
-			.attr('x', 10)
-			.attr('y', 10)
-			.attr('text-anchor', 'beginning')
-			.attr('font-size',  '1.3em')
-            .text(function(d) {return d.id});
+          .attr('fill', function(d, i) {
+				    return palette.yellowgreen
+        })
+  			.attr('x', 10)
+  			.attr('y', 10)
+  			.attr('text-anchor', 'beginning')
+  			.attr('font-size',  '1.3em')
+        .text(function(d) {return d.id})
+        .on('click', function(d){
+				  click_event(d.id);
+        });
 
         node.exit().remove();
 
@@ -155,6 +156,20 @@ function myGraph(el) {
 }
 
 graph = new myGraph("#graph");
+
+function click_event (who) {
+  if(who=='PHP'){
+    graph.addNode("Yii");
+    graph.addNode("Phalcon");
+    graph.addNode("Zend");
+    graph.addLink("PHP", "Yii");
+    graph.addLink("PHP", "Phalcon");
+    graph.addLink("PHP", "Zend");
+    graph.removeNode("nginx");
+  }
+
+}
+
 
 // You can do this from the console as much as you like...
 graph.addNode("PHP");
