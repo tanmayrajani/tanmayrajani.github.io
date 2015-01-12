@@ -4,17 +4,36 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="underscore.min..js"></script>
     <script type="text/javascript" src="d3.min.js"></script>
+    <link rel="stylesheet" href="base.css">
     <style type="text/css">
-        .link { stroke: #ccc; }
-        .nodetext { pointer-events: none; font: 10px sans-serif; }
-        body { width:100%; height:100%; margin:none; padding:none; }
-        #graph { width:500px;height:500px; border:3px solid black;border-radius:12px; margin:auto; }
+        #graph { width:1200px;height:500px; border:3px solid black;border-radius:12px; margin:auto; #background-color: #FF9933 }
     </style>
 </head>
 <body>
 <div id="graph"></div>
 </body>
 <script type="text/javascript">
+
+var palette = {
+      "lightgray": "#819090",
+      "gray": "#708284",
+      "mediumgray": "#536870",
+      "darkgray": "#475B62",
+
+      "darkblue": "#0A2933",
+      "darkerblue": "#042029",
+
+      "paleryellow": "#FCF4DC",
+      "paleyellow": "#EAE3CB",
+      "yellow": "#A57706",
+      "orange": "#BD3613",
+      "red": "#D11C24",
+      "pink": "#C61C6F",
+      "purple": "#595AB7",
+      "blue": "#2176C7",
+      "green": "#259286",
+      "yellowgreen": "#738A05"
+  }
 
 function myGraph(el) {
 
@@ -81,11 +100,11 @@ function myGraph(el) {
 
     var update = function () {
 
-        var link = vis.selectAll("line.link")
+        var link = vis.selectAll("line")
             .data(links, function(d) { return d.source.id + "-" + d.target.id; });
 
-        link.enter().insert("line")
-            .attr("class", "link");
+        link.enter().append("line")
+            .attr('stroke', palette.gray)
 
         link.exit().remove();
 
@@ -96,18 +115,24 @@ function myGraph(el) {
             .attr("class", "node")
             .call(force.drag);
 
-        nodeEnter.append("image")
-            .attr("class", "circle")
-            .attr("xlink:href", "https://d3nwyuy0nl342s.cloudfront.net/images/icons/public.png")
-            .attr("x", "-8px")
-            .attr("y", "-8px")
-            .attr("width", "16px")
-            .attr("height", "16px");
+        nodeEnter.append("circle")
+            .attr('cx', function(d) { return d.x; })
+			.attr('cy', function(d) { return d.y; })
+			.attr('r', 7)
+            .attr('fill', function(d, i) {
+				if (i%2==0) { return palette.pink }
+				else { return palette.blue }
+			})
 
         nodeEnter.append("text")
-            .attr("class", "nodetext")
-            .attr("dx", 12)
-            .attr("dy", ".35em")
+        	.attr('font-family', 'Roboto Slab')
+			.attr('fill', function(d, i) {
+				return palette.yellowgreen
+			})
+			.attr('x', 10)
+			.attr('y', 10)
+			.attr('text-anchor', 'beginning')
+			.attr('font-size',  '1.3em')
             .text(function(d) {return d.id});
 
         node.exit().remove();
@@ -132,12 +157,13 @@ function myGraph(el) {
 graph = new myGraph("#graph");
 
 // You can do this from the console as much as you like...
-graph.addNode("Cause");
-graph.addNode("Effect");
-graph.addLink("Cause", "Effect");
-graph.addNode("A");
-graph.addNode("B");
-graph.addLink("A", "B");
+graph.addNode("PHP");
+graph.addNode("MySQl");
+graph.addLink("PHP", "MySQl");
+graph.addNode("Apache");
+graph.addNode("nginx");
+graph.addLink("Apache", "nginx");
+graph.addLink("Apache", "PHP");
 
 </script>
 </html>
