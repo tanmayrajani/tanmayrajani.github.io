@@ -157,6 +157,14 @@ function myGraph(el) {
 
 graph = new myGraph("#graph");
 
+var newFriends=[];
+
+//
+function addNewNodeAndLinks (me,newFriends) {
+  // body...
+}
+
+//Currently hardcoded for php
 function click_event (who) {
   if(who=='PHP'){
     graph.addNode("Yii");
@@ -166,12 +174,13 @@ function click_event (who) {
     graph.addLink("PHP", "Phalcon");
     graph.addLink("PHP", "Zend");
     graph.removeNode("nginx");
+    //push friends to newFriends array
+    //addNewNodeAndLinks("PHP",newFriends);
   }
-
 }
+   
 
-
-// You can do this from the console as much as you like...
+// Initialize with these nodes
 graph.addNode("PHP");
 graph.addNode("MySQl");
 graph.addLink("PHP", "MySQl");
