@@ -79,12 +79,16 @@ var node = myChart.selectAll('circle')
 node.append('circle')
 	.attr('cx', function(d) { return d.x; })
 	.attr('cy', function(d) { return d.y; })
-	.attr('r', circleWidth )
+	.attr('r', circleWidth)
 	.attr('fill', function(d, i) {
 		if (i%2==0) { return palette.pink }
 		else { return palette.blue }
 	})
 	.on('click', function(d){
+		node.transition().duration(400).delay(400)
+        .attr("r", 10);
+
+
 		var relatives='';
 		document.getElementById('relation').innerHTML='';
 		document.getElementById('relation').innerHTML='I am '+d.name+'<br>';
@@ -139,6 +143,4 @@ force.on('tick', function(e) {
 		.attr('y2', function(d) { return d.target.y })
 })
 
-
 force.start();
-
