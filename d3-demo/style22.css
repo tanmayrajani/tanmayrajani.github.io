@@ -1,0 +1,26 @@
+#title-main{
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+#graph { width:1200px;height:420px; border:3px solid black;border-radius:12px; margin:auto; background-image: url("1344899.jpg") ; margin-top: 10px; }
+.main{
+	width: 75%;
+	margin: 0 10px 20px 10px;
+	border: solid;
+	border-radius: 5px;
+	float: left;
+}
+.article-div{
+	margin: 10px 5px 5px 5px;
+	border: solid;
+	border-radius: 7px;
+}
+.
+.right-col{
+	width: 25%;
+	float: right;
+	margin: 0 10px 20px 10px;
+	border: solid;
+	border-radius: 3px;
+}
