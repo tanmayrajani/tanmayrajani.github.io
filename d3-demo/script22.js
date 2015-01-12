@@ -104,12 +104,14 @@ function myGraph(el) {
           .attr('r', 7)
           .attr('fill', palette.blue)
           .on('mouseover', function(d){
-            x.attr('font-size',  '1.4em');
-            d3.select(this).attr('r',10);
+            x.attr('font-size',  '1.25em');
+            d3.select(this).attr('r',10)
+            .attr('cursor','pointer');
           })
           .on('mouseout', function(d){
             x.attr('font-size',  '1.2em');
-            d3.select(this).attr('r',7);
+            d3.select(this).attr('r',7)
+            .attr('cursor','auto');
           });
 
        var x= nodeEnter.append("text")
@@ -124,7 +126,7 @@ function myGraph(el) {
 				  click_event(d.id);
         })
         .on('mouseover', function(d){
-          d3.select(this).attr('font-size',  '1.4em')
+          d3.select(this).attr('font-size',  '1.3em')
           .attr('cursor','pointer');
           y.attr('r',10);
         })
