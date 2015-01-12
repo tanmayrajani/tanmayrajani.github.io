@@ -6,7 +6,7 @@
     <script type="text/javascript" src="d3.min.js"></script>
     <link rel="stylesheet" href="base.css">
     <style type="text/css">
-        #graph { width:1200px;height:500px; border:3px solid black;border-radius:12px; margin:auto; #background-color: #FF9933; margin-top: 20px; }
+        #graph { width:1200px;height:500px; border:3px solid black;border-radius:12px; margin:auto; background-image: url("1344899.jpg") ; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -124,9 +124,7 @@ function myGraph(el) {
 
         nodeEnter.append("text")
         	.attr('font-family', 'Roboto Slab')
-          .attr('fill', function(d, i) {
-				    return palette.yellowgreen
-        })
+          .attr('fill', '#FFFF66')
   			.attr('x', 10)
   			.attr('y', 10)
   			.attr('text-anchor', 'beginning')
@@ -134,6 +132,12 @@ function myGraph(el) {
         .text(function(d) {return d.id})
         .on('click', function(d){
 				  click_event(d.id);
+        })
+        .on('mouseover', function(d){
+          var nodeSelection = d3.select(this).attr('font-size',  '1.5em');
+        })
+        .on('mouseout', function(d){
+          var nodeSelection = d3.select(this).attr('font-size',  '1.3em');
         });
 
         node.exit().remove();
