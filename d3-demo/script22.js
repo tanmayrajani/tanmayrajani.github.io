@@ -98,13 +98,21 @@ function myGraph(el) {
             .attr("class", "node")
             .call(force.drag);
 
-        nodeEnter.append("circle")
+      var y=  nodeEnter.append("circle")
           .attr('cx', function(d) { return d.x; })
           .attr('cy', function(d) { return d.y; })
           .attr('r', 7)
           .attr('fill', palette.blue)
+          .on('mouseover', function(d){
+            x.attr('font-size',  '1.4em');
+            d3.select(this).attr('r',10);
+          })
+          .on('mouseout', function(d){
+            x.attr('font-size',  '1.2em');
+            d3.select(this).attr('r',7);
+          });
 
-        nodeEnter.append("text")
+       var x= nodeEnter.append("text")
         	.attr('font-family', 'Roboto Slab')
           .attr('fill', '#FFFF66')
   			.attr('x', 10)
@@ -116,10 +124,14 @@ function myGraph(el) {
 				  click_event(d.id);
         })
         .on('mouseover', function(d){
-          var nodeSelection = d3.select(this).attr('font-size',  '1.4em');
+          d3.select(this).attr('font-size',  '1.4em')
+          .attr('cursor','pointer');
+          y.attr('r',10);
         })
         .on('mouseout', function(d){
-          var nodeSelection = d3.select(this).attr('font-size',  '1.2em');
+          d3.select(this).attr('font-size',  '1.2em')
+          .attr('cursor','auto');
+          y.attr('r',7);
         });
 
         node.exit().remove();
