@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400);
-
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400);
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,108 +41,15 @@ q:before, q:after {
     content: none;
 }
 
-.fullform{
-    margin-left: 30px;
-    float: left;
-    margin-bottom:30px;
-}
-
-.imagee{
-    margin-top: 50px;
-    float: right;
-}
-
-img:after{
-    content: 'Douglas Crockford'
-}
-
 .titlecenter{
     margin-top: 60px
 }
 
 ::selection { background-color: #FFA; color: #990000;}
 
-h1.whatisjson {
-    font-weight:bold;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom:3px solid black;
-    font-size:60px;
-    margin-bottom:40px;
-}
-
-ul.aboutjson li {
-    font-size: 37px;
-    padding-top: 40px;    
-    margin-left: 30px;
-}
-
-ul.writejson li,ul.writejson2 li{
-    font-weight: normal;
-    font-size: 32px;
-    margin-left: 30px;   
-}
-
 a{
     text-decoration: none;
     color: white;
-}
-
-ul.writejson li{
-    padding-top: 28px;    
-}
-
-ul.writejson2 li{
-    padding-top: 18px;    
-}
-
-span.usage{
-    font-size: 21px;
-    padding-left:55px;
-
-}
-
-
-ul li:before, .cube ul li:before{
-    content: '✎ \0020';
-}
-
-.cube ul li{
-    font-size: 25px;
-    text-decoration: none;
-}
-
-span.jsonvalues{
-    font-size: .85em;
-    font-weight: bolder;
-    padding-left: 48px;
-}
-
-span.jsonnote{
-    font-size: .84em;
-    font-weight: bolder;
-
-}
-
-span.tttitle{
-    font-size: 148px;
-    color:#993366;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-#sp1{
-    float: left;
-    font-weight: 400;
-    margin-top: 60px
-}
-
-#sp2{
-    float: right;
-    margin-top: 48px;
 }
 
 body {
@@ -333,3 +240,82 @@ box-shadow: 13px 13px 30px 2px rgba(0,0,0,0.87);
         background: white;
 }
 #spinner { position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url('5.gif') 50% 50% no-repeat #ede9df;}
+
+/*Kartik's css */
+
+.tech,.cultural,.news,.about,.contact
+{
+    margin-top:5%;
+}
+.exp
+{
+    width:20%;
+    height:30px;
+    padding:10px;
+    background: #000 /*url(ce.png) no-repeat right*/;
+    opacity:0.7;
+    cursor:pointer;
+    
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.0s;
+    
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 0.0s;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+}
+img
+{
+    width:30px;
+    height:30px;    
+    -webkit-transition: margin-left 0.4s;
+    -moz-transition: margin-left 0.4s;
+    -o-transition: margin-left 0.4s;
+    transition: margin-left 0.4s;
+    transition-delay:0.0s;
+    float:right;
+}
+
+.text{
+    color:#FFF;
+    opacity:0;  
+}
+
+.exp:hover {
+    width: 90%;
+}
+
+.exp:hover div.text{
+    opacity:1;
+    font-size:100%;
+    margin-top:5%;
+    margin-right:0.2%;
+    
+    -webkit-transition:opacity 0.2s ease-in-out;
+    -moz-transition:opacity 0.2s ease-in-out;
+    -o-transition:opacity 0.2s ease-in-out;
+    transition:opacity 0.2s linear;
+    transition-delay:0.3s;
+    position:absolute;
+}
+.menu {
+    text-align: right;
+    position: absolute;
+    width: 12%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.impress-enabled          { pointer-events: none }
+.impress-enabled #impress,
+.impress-enabled .menu{
+    pointer-events: auto;
+}
