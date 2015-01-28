@@ -329,3 +329,4 @@ box-shadow: 13px 13px 30px 2px rgba(0,0,0,0.87);
         height: 700px;
         background: white;
 }
+#spinner { position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url('preloader.gif') 50% 50% no-repeat #ede9df;}
