@@ -6,7 +6,7 @@ $(window).load(function() { $("#spinner").fadeOut("slow"); });
 // });
 
 $(function() {
-	$.getJSON('document.json', function(data) {
+	$.getJSON('js/document.json', function(data) {
 	    var template = $('#ce-temp').html();
 	    var info = Mustache.to_html(template, data);
 	    $('#ce-third').html(info);
