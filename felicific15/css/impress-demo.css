@@ -42,7 +42,18 @@ q:before, q:after {
 }
 
 .titlecenter{
-    margin-top: 60px
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.descr{
+    text-align: left;
+}
+
+.event-table{
+    margin-top: 10px;
 }
 
 ::selection { background-color: #FFA; color: #990000;}
