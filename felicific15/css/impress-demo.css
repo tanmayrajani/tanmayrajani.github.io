@@ -42,14 +42,56 @@ q:before, q:after {
 }
 
 .titlecenter{
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: 1.5em;
 }
 
-.descr{
-    text-align: left;
+.trr{
+    margin-top: 5px;
+    font-size: .92em;
+}
+
+td{
+    line-height: 1.25;
+}
+
+.slogan{
+    margin-top: 10px;
+    font-size: .94em;
+}
+
+.det, .rul{
+    font-size: .8em;
+    line-height: 1.1;
+}
+
+.details{
+    text-decoration: none;
+    cursor: inherit;
+    border: none;
+}
+
+.butt{
+    height: 50px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    font-size: .7em;
+    bottom: 60px;
+    right: 70px;
+    position: absolute;
+    background-color: #038998;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.87);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.butt:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.87);
 }
 
 .event-table{
