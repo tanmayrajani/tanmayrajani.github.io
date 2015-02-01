@@ -7,32 +7,524 @@
         "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
         "rules": "even more blah blah blah blah blah blah blah blah",
         "date": "12/12/12 xx:xxxm"
+      },
+      "second": {
+        "name": "QuizoWeb",
+        "slogan": "blah blah blah blah",
+        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+        "rules": "even more blah blah blah blah blah blah blah blah",
+        "date": "12/12/12 xx:xxxm"
       }
     }
   },
   "cultural": {
     "monday": {
-      "celebrate": "In A Wedding",
+      "celebrate": "IN A WEDDING",
       "first": {
-        "name": "Android man",
-        "time": "xx:00 to xx:00",
-        "fees": "FREE",
-        "place": "CF",
+        "name": "Rangoli competition",
+        "time": "10:00 to 12:00",
+        "fees": "Not available",
+        "place": "CF_Right",
         "co-ordinators": {
-          "c1": "John Doe",
-          "p1": 7878787878,
-          "c2": "John Abraham"
+          "c1": "PANCHAL DUTT",
+          "p1": 8347307228,
+          "c2": "SANDEEP SATHVARA"
         }
       },
       "second": {
-        "name": "Android man",
-        "time": "xx:00 to xx:00",
-        "fees": "FREE",
-        "place": "CF",
+        "name": "Stand-up Comedy",
+        "time": "03:15 to 04:30",
+        "fees": "Not available",
+        "place": "CF_Stage",
         "co-ordinators": {
-          "c1": "John Doe",
-          "p1": 7878787878,
-          "c2": "John Abraham"
+          "c1": "PANCHAL DUTT",
+          "p1": 8866188765,
+          "c2": "DHAIRYA SHAH"
+        }
+      },
+      "third": {
+        "name": "Cricket Auction (Round-1)",
+        "time": "12:00 to 02:00",
+        "fees": "Not available",
+        "place": "CF(1 hr)",
+        "co-ordinators": {
+          "c1": "PARTH PATEL",
+          "p1": 9925075347,
+          "c2": "HARSH PATEL"
+        }
+      },
+      "fourth": {
+        "name": "Pictionary",
+        "time": "2:00 to 4:00",
+        "fees": "Not available",
+        "place": "CF_Stage",
+        "co-ordinators": {
+          "c1": "SHRUTI BHUTAIYA",
+          "p1": "Not available",
+          "c2": "CHANDANI DHAMECHA"
+        }
+      },
+      "fifth": {
+        "name": "Master Chef (Boys)",
+        "time": "11:00 to 01:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "MIT PATEL",
+          "p1": "Not available",
+          "c2": "ANEREE SHAH"
+        }
+      },
+      "sixth": {
+        "name": "Bollywood Talkies (Round-1)",
+        "time": "02:00 to 04:00",
+        "fees": "FREE",
+        "place": "Room 10",
+        "co-ordinators": {
+          "c1": "JAY PUROHIT",
+          "p1": 8758200309,
+          "c2": "AKHIL FRANCIS"
+        }
+      },
+      "seventh": {
+        "name": "Best of the Day",
+        "time": "04:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      }
+    },
+    "tuesday": {
+      "celebrate": "RELIVING OLD DAYS",
+      "first": {
+        "name": "T-Shirt Painting",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "second": {
+        "name": "Nail Art",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "third": {
+        "name": "Sand Painting",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fourth": {
+        "name": "Bollywood Talkies (Round-2)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fifth": {
+        "name": "Tatto making",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "sixth": {
+        "name": "Slow Cycling",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "seventh": {
+        "name": "Beg, Borrow, Steal",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "eighth": {
+        "name": "Cricket Auction (Round-2)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "ninth": {
+        "name": "Master Chef (Girls)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "tenth": {
+        "name": "Best of the Day",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      }
+    },
+    "wednesday": {
+      "celebrate": "HALLOWEEN DAY",
+      "first": {
+        "name": "Box Cricket",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "second": {
+        "name": "Paper Crafting",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "third": {
+        "name": "Picture Story",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fourth": {
+        "name": "Hair Styling",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fifth": {
+        "name": "Acting kaa keeda",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "sixth": {
+        "name": "TV Series Addicted",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "seventh": {
+        "name": "Best from Waste",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "eighth": {
+        "name": "Cartoon Painting (A2)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "ninth": {
+        "name": "Shutter De-favola Fiesta",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "tenth": {
+        "name": "Karaoke",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "eleventh": {
+        "name": "Best of the Day",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      }
+    },
+    "thursday": {
+      "celebrate": "OFF TO WORK",
+      "first": {
+        "name": "Ad Making (Topics will be given while registration)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "second": {
+        "name": "Spell Bee",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "third": {
+        "name": "Rifle Shooting",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fourth": {
+        "name": "Sentence Making",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fifth": {
+        "name": "Housie",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "sixth": {
+        "name": "Sherlocked",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "seventh": {
+        "name": "Roadies",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "eighth": {
+        "name": "Best of the Day",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      }
+    },
+    "friday": {
+      "celebrate": "IT'S A REUNION",
+      "first": {
+        "name": "A tribute to victims",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "second": {
+        "name": "Luck By Chance",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "third": {
+        "name": "Street bowling",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fourth": {
+        "name": "Karaoke",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "fifth": {
+        "name": "Talent Show (No singing/dancing)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "sixth": {
+        "name": "Clay Modeling",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "seventh": {
+        "name": "You Zinged (Group wise Competition)",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "eighth": {
+        "name": "Roadies",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
+        }
+      },
+      "ninth": {
+        "name": "Best of the Day",
+        "time": "00:00 to 00:00",
+        "fees": "Not available",
+        "place": "Not available",
+        "co-ordinators": {
+          "c1": "Not available",
+          "p1": "Not available",
+          "c2": "Not available"
         }
       }
     }
