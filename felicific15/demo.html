@@ -464,7 +464,7 @@
     </div>
 
     <div id="civil" class="step slide slide-cyan" data-x="-5000" data-y="15000" data-z="-2000" data-rotate-z="360">
-        <center class="titlecenter"><h2>Robotics</h2><ul class="nav2">
+        <center class="titlecenter"><h2>Civil Events</h2><ul class="nav2">
                 <li><a class="roll-link" href="#civil-first"><span data-title=""></span></a></li>
                 <li><a class="roll-link" href="#civil-second"><span data-title=""></span></a></li>
                 <li><a class="roll-link" href="#civil-third"><span data-title=""></span></a></li>
@@ -487,13 +487,15 @@
     </div>
 
 <div id="cultural" class="step slide slide-cyan" data-x="1000" data-y="0" data-z="-10000" data-rotate-z="-360">
-        <center class="titlecenter"><h2>Cultural Events</h2></center>
-            <a href="#monday">Monday</a><br>
-            <a href="#tuesday">Tuesday</a><br>
-            <a href="#wednesday">Wednesday</a><br>
-            <a href="#thursday">Thursday</a><br>
-            <a href="#friday">Friday</a><br>
-            <a href="#saturday">Saturday</a><br>
+        <center><h2 class="titlecenter">Cultural Events</h2><ul class="nav2 cultural-nav">
+                <li class="mon-link"><a class="roll-link" href="#monday"><span data-title="Monday Events">Monday Events</span></a></li>
+                <li class="tue-link"><a class="roll-link" href="#tuesday"><span data-title="Tuesday Events">Tuesday Events</span></a></li>
+                <li class="wed-link"><a class="roll-link" href="#wednesday"><span data-title="Wednesday Events">Wednesday Events</span></a></li>
+                <li class="thu-link"><a class="roll-link" href="#thursday"><span data-title="Thursday Events">Thursday Events</span></a></li>
+                <li class="fri-link"><a class="roll-link" href="#friday"><span data-title="Friday Events">Friday Events</span></a></li>
+            </ul>
+        </center>
+
     </div>
 <!-- Here day-xth means that day's events -->
     <div id="monday" class="step slide slide-cyan" data-x="11000" data-y="11000" data-z="-2000">
@@ -1101,6 +1103,22 @@
             <a href="#day-sixth">Something Else</a><br>
     </div>
 
+    <div id="news" class="step slide slide-cyan" data-x="-1000" data-y="-1000" data-rotate-z="60">
+        <center><h2 class="titlecenter">Felicific News</h2></center>
+        <ul class="nav3"><li>I would love a different box model! I find it bizarre that padding and border add the width of an ob</li>
+            <li>I would love a different box model! I find it bizarre that padding and border add the width of an ob</li>
+            <li>I would love a different box model! I find it bizarre that padding and border add the width of an ob</li>
+        </ul>
+
+    </div>
+
+    <div id="about" class="step slide slide-cyan" data-x="0" data-y="-5000" data-rotate-z="160">
+        <center><h2 class="titlecenter">About Felicific</h2></center>
+        <p>I would love a different box model! I find it bizarre that padding and border add the width of an obI would love a different box model! I find it bizarre that padding and border add the width of an obI would love a different box model! I find it bizarre that padding and border add the width of an obI would love a different box model! I find it bizarre that padding and border add the width of an obI would love a different box model! I find it bizarre that padding and border add the width of an ob
+        </p>
+        
+    </div>
+
     <!-- We will add Saturday events if needed.. -->
 
     <!-- <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
@@ -1132,14 +1150,14 @@
         </div>
     </a>
 
-    <a href="#">
+    <a href="#news">
         <div class="news exp">
             <img src="news.png" />
             <div class="text">NEWS FEED</div>
         </div>
     </a>
 
-    <a href="#">
+    <a href="#about">
         <div class="about exp">
             <img src="about.png" />
             <div class="text">ABOUT</div>

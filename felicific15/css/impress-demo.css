@@ -501,18 +501,32 @@ a:hover{
   transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 }
 
-ul{
+ul.nav, ul.nav2{
     text-align: left;
     padding-left: 130px;
     padding-top: 20px;
 }
 
-ul li{
+.cultural-nav{
+  margin-top: 50px;
+}
+
+ul.nav2 li,ul.nav li{
     padding-left: 90px;
 }
 
-ul.nav2 li:before{
+ul.nav2 li:before, ul.nav3 li:before{
     content: '✐ \0020';
+}
+
+p{
+  font-size: .8em;
+  line-height: 1.2;
+}
+
+ul.nav3{
+  line-height: 1.3;
+  padding-top: 20px;
 }
 
 .dept{
