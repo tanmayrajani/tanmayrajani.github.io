@@ -74,7 +74,7 @@ td{
     border: none;
 }
 
-.butt,.butt1{
+.butt,.butt1,.butt3{
     height: 50px;
     width: 110px;
     margin-left: auto;
@@ -95,11 +95,15 @@ td{
 }
 
 .butt1{
-    left: 70px;
-    height: 70px;
+  height: 70px;
 }
 
-.butt:hover,.butt1:hover{
+.butt1,.butt3{
+    left: 70px;
+}
+
+
+.butt:hover,.butt1:hover,.butt3:hover{
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.87);
 }
 
