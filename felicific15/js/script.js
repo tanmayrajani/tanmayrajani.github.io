@@ -47,7 +47,7 @@ $(function() {
 	    		str=actualDay+'-'+eventNo[i-1];
 	    		$(str).html(info2);
 		   	};
-		}
+		};
 	    
 
 	    

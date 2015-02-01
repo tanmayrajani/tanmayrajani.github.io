@@ -7,13 +7,6 @@
         "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
         "rules": "even more blah blah blah blah blah blah blah blah",
         "date": "12/12/12 xx:xxxm"
-      },
-      "second": {
-        "name": "QuizoWeb",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm"
       }
     }
   },
@@ -41,38 +34,6 @@
           "p1": 7878787878,
           "c2": "John Abraham"
         }
-      }
-    },
-    "tuesday": {
-      "first": {
-        "name": "Android man",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm"
-      },
-      "second": {
-        "name": "QuizoWeb",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm"
-      }
-    },
-    "wednesday": {
-      "first": {
-        "name": "Android man",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm"
-      },
-      "second": {
-        "name": "QuizoWeb",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm"
       }
     }
   }
