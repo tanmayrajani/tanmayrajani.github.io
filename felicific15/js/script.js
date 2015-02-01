@@ -30,9 +30,21 @@ $(function() {
 	$.getJSON('js/document.json', function(data) {
 		var branch;
 		var eventNo;
+		var day;
 
-		var template = '<center class="titlecenter"><h2>{{technical.ce.first.name}}</h2></center><ul><li>Slogan: {{technical.ce.first.slogan}}</li><li>Date: {{technical.ce.first.date}}</li><li>Description: {{technical.ce.first.description}}</li></ul>';
+		var template = '<center class="titlecenter"><h2>{{technical.'+branch+'.first.name}}</h2></center><ul><li>Slogan: {{technical.ce.first.slogan}}</li><li>Date: {{technical.ce.first.date}}</li><li>Description: {{technical.ce.first.description}}</li></ul>';
 	    var info = Mustache.to_html(template, data);
 	    $('#ce-third').html(info);
+
+	    var template2 = '<center><h2 class="titlecenter">{{cultural.monday.first.name}}</h2><table class="cult-event"><tr class="trr"><td>Time</td><td>{{cultural.monday.first.time}}</td> </tr><tr class="trr"><td>Place:</td><td>{{cultural.monday.first.place}}</td></tr><tr class="trr"><td>Fees:</td><td>{{cultural.monday.first.fees}}</td></tr><tr class="trr"><td>Co-ordinators:&nbsp;</td><td>{{cultural.monday.first.co-ordinators.c1}}, {{cultural.monday.first.co-ordinators.p1}}<br>{{cultural.monday.first.co-ordinators.c2}}, {{cultural.monday.first.co-ordinators.p2}}</td></tr></table></center><a class="details" href="#monday"><button class="butt"><< Back</button></a>';
+	    var info2 = Mustache.to_html(template2, data);
+	    $('#monday-second').html(info);
+
+
+
+
+
+
+
 	});
 });

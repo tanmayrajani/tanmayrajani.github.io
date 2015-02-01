@@ -515,8 +515,19 @@ ul.nav2 li,ul.nav li{
     padding-left: 90px;
 }
 
-ul.nav2 li:before, ul.nav3 li:before{
+ul.nav2 li:before, ul.nav3 li:before, ul.knowmore li:before{
     content: '✐ \0020';
+}
+
+ul.knowmore li{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.cult-event{
+  margin-top: 60px;
+  line-height: 1.8;
+  font-size: 1.3em;
 }
 
 p{
@@ -529,6 +540,11 @@ p.aboutd{
   font-size: .7em;
   line-height: 1.1;
   margin-top: 14px; 
+}
+
+p.about-main{
+  font-size: 1em;
+  line-height: 1.2;
 }
 
 ul.nav3{
