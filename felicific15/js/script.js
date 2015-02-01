@@ -34,9 +34,9 @@ $(function() {
 		var nos=[7,10,11,8,9];
 		var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','nineth','tenth','eleventh'];
 		var str,template2,info2;
-		var template = '<center class="titlecenter"><h2>{{technical.'+branch+'.first.name}}</h2></center><ul><li>Slogan: {{technical.ce.first.slogan}}</li><li>Date: {{technical.ce.first.date}}</li><li>Description: {{technical.ce.first.description}}</li></ul>';
-	    var info = Mustache.to_html(template, data);
-	    $('#ce-third').html(info);
+		//var template = '<center class="titlecenter"><h2>{{technical.'+branch+'.first.name}}</h2></center><ul><li>Slogan: {{technical.ce.first.slogan}}</li><li>Date: {{technical.ce.first.date}}</li><li>Description: {{technical.ce.first.description}}</li></ul>';
+	    //var info = Mustache.to_html(template, data);
+	    //$('#ce-third').html(info);
 
 	    for (index = 0, len = day.length; index < len; ++index) {
 		    actualDay = day[index];
@@ -46,17 +46,7 @@ $(function() {
 	    		info2 = Mustache.to_html(template2, data);
 	    		str=actualDay+'-'+eventNo[i-1];
 	    		$(str).html(info2);
-		   	};
-		};
-	    
-
-	    
-
-
-
-
-
-
-
+		   	}
+		}
 	});
 });
