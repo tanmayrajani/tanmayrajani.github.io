@@ -28,7 +28,7 @@ $(function() {
 
 
 	$.getJSON('js/document.json', function(data) {
-		var branch,actualDay,actualNo;
+		var branch;
 		var index,len;
 		var day=['monday', 'tuesday','wednesday','thursday','friday'];
 		var nos=[7,10,11,8,9];
@@ -39,12 +39,10 @@ $(function() {
 	    //$('#ce-third').html(info);
 
 	    for (index = 0, len = day.length; index < len; ++index) {
-		    actualDay = day[index];
-		    actualNo = nos[index];
-		    for (var i = 1; i <= actualNo; i++) {
-		   		template2 = '<center><h2 class="titlecenter">{{cultural.'+actualDay+'.'+eventNo[i-1]+'.name}}</h2><table class="cult-event" cellspacing="15px" cellpadding="5px"><tr class="trr"><td>Time</td><td>{{cultural.'+actualDay+'.'+eventNo[i-1]+'.time}}</td> </tr><tr class="trr"><td>Place:</td><td>{{cultural.'+actualDay+'.'+eventNo[i-1]+'.place}}</td></tr><tr class="trr"><td>Fees:</td><td>{{cultural.'+actualDay+'.'+eventNo[i-1]+'.fees}}</td></tr><tr class="trr"><td>Co-ordinators:&nbsp;</td><td>{{cultural.'+actualDay+'.'+eventNo[i-1]+'.co-ordinators.c1}}, {{cultural.'+actualDay+'.'+eventNo[i-1]+'.co-ordinators.p1}}<br>{{cultural.'+actualDay+'.'+eventNo[i-1]+'.co-ordinators.c2}}, {{cultural.'+actualDay+'.'+eventNo[i-1]+'.co-ordinators.p2}}</td></tr></table></center><a class="details" href="#'+actualDay+'"><button class="butt3"><< Back</button></a>';
+		    for (var i = 1; i <= nos[index]; i++) {
+		   		template2 = '<center><h2 class="titlecenter">{{cultural.'+day[index]+'.'+eventNo[i-1]+'.name}}</h2><table class="cult-event" cellspacing="15px" cellpadding="5px"><tr class="trr"><td>Time</td><td>{{cultural.'+day[index]+'.'+eventNo[i-1]+'.time}}</td> </tr><tr class="trr"><td>Place:</td><td>{{cultural.'+day[index]+'.'+eventNo[i-1]+'.place}}</td></tr><tr class="trr"><td>Fees:</td><td>{{cultural.'+day[index]+'.'+eventNo[i-1]+'.fees}}</td></tr><tr class="trr"><td>Co-ordinators:&nbsp;</td><td>{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.c1}}, {{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.p1}}<br>{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.c2}}, {{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.p2}}</td></tr></table></center><a class="details" href="#'+day[index]+'"><button class="butt3"><< Back</button></a>';
 	    		info2 = Mustache.to_html(template2, data);
-	    		str=actualDay+'-'+eventNo[i-1];
+	    		str='#'+day[index]+'-'+eventNo[i-1];
 	    		$(str).html(info2);
 		   	}
 		}
