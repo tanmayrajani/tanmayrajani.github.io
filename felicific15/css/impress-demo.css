@@ -511,6 +511,10 @@ ul.nav, ul.nav2{
     padding-top: 20px;
 }
 
+ul.too-much{
+  padding-top: 0px;
+}
+
 .cultural-nav{
   margin-top: 50px;
 }
