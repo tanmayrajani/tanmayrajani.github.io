@@ -38,7 +38,7 @@ $(function() {
 
 	    var template2 = '<center><h2 class="titlecenter">{{cultural.monday.first.name}}</h2><table class="cult-event"><tr class="trr"><td>Time</td><td>{{cultural.monday.first.time}}</td> </tr><tr class="trr"><td>Place:</td><td>{{cultural.monday.first.place}}</td></tr><tr class="trr"><td>Fees:</td><td>{{cultural.monday.first.fees}}</td></tr><tr class="trr"><td>Co-ordinators:&nbsp;</td><td>{{cultural.monday.first.co-ordinators.c1}}, {{cultural.monday.first.co-ordinators.p1}}<br>{{cultural.monday.first.co-ordinators.c2}}, {{cultural.monday.first.co-ordinators.p2}}</td></tr></table></center><a class="details" href="#monday"><button class="butt"><< Back</button></a>';
 	    var info2 = Mustache.to_html(template2, data);
-	    $('#monday-second').html(info);
+	    $('#monday-second').html(info2);
 
 
 
