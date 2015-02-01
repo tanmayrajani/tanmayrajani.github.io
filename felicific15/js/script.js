@@ -1,20 +1,26 @@
 $(window).load(function() { $("#spinner").fadeOut("slow"); });
 
 $(function() {
-	$('.ce-link, .ec-link, .mba-link, .robo-link').click(function() {
-		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-d-orange').addClass('slide-blue');
-		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-d-orange').addClass('body-blue');
+	$('.ce-link, .it-link, .mba-link').click(function() {
+		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-green').removeClass('slide-brown').addClass('slide-blue');
+		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-green').removeClass('body-brown').addClass('body-blue');
 	});
 
-	$('.civil-link, .it-link, .bmca-link').click(function() {
-		$('.slide').removeClass('slide-cyan').removeClass('slide-blue').removeClass('slide-d-orange').addClass('slide-purple');
-		$('body').removeClass('body-cyan').removeClass('body-blue').removeClass('body-d-orange').addClass('body-purple');
+	$('.civil-link, .ic-link, .mech-link').click(function() {
+		$('.slide').removeClass('slide-cyan').removeClass('slide-blue').removeClass('slide-green').removeClass('slide-brown').addClass('slide-purple');
+		$('body').removeClass('body-cyan').removeClass('body-blue').removeClass('body-green').removeClass('body-brown').addClass('body-purple');
 	});
 
-	$('.chem-link, .ic-link, .mech-link').click(function() {
-		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-blue').addClass('slide-d-orange');
-		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-blue').addClass('body-d-orange');
+	$('.chem-link, .mba-link, .robo-link').click(function() {
+		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-green').removeClass('slide-blue').addClass('slide-brown');
+		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-green').removeClass('body-blue').addClass('body-brown');
 	});
+
+	$('.ec-link, .bmca-link').click(function() {
+		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-blue').removeClass('slide-brown').addClass('slide-green');
+		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-blue').removeClass('body-brown').addClass('body-green');
+	});
+
 
 	$.getJSON('js/document.json', function(data) {
 		var branch;
