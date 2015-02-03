@@ -1,5 +1,5 @@
-/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400);
-*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -555,6 +555,10 @@ ul.nav3{
 
 .contactweb{
   text-decoration: underline;
+}
+
+h6{
+  color: 
 }
 
 .commit{
