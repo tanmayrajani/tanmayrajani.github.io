@@ -359,6 +359,11 @@ img
     margin-bottom: 10%;
 }
 
+.img11,.img2{
+  width:32px;
+  height: 32px;
+}
+
 .impress-enabled          { pointer-events: none }
 .impress-enabled #impress,
 .impress-enabled .menu,.menu1{
