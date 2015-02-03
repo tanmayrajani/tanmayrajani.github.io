@@ -553,6 +553,20 @@ ul.nav3{
     padding-top: 10px;
 }
 
+.contactweb{
+  text-decoration: underline;
+}
+
+.commit{
+  height: 600px;
+  width:auto;
+  background-image: url('../imgs/commit.jpg');
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 40px;
+  background-size: contain;
+}
+
 .body-blue{
     background: rgba(227,242,253,1);
 background: -moz-radial-gradient(center, ellipse cover, rgba(227,242,253,1) 0%, rgba(33,149,243,1) 49%, rgba(13,72,161,1) 100%);
