@@ -215,6 +215,33 @@ box-shadow: 13px 13px 30px 2px rgba(0,0,0,0.87);
 {
     margin-top:5%;
 }
+.home1,.tech1,.cultural1,.news1,.about1
+{
+
+	position:absolute;
+	right:0;
+}
+.home1
+{
+	top:20px;
+}
+.tech1
+{
+	top:80px;
+}
+.cultural1
+{
+	top:140px;
+}
+.news1
+{
+	top:200px;
+}
+.about1
+{
+	top:260px;
+}
+
 .exp
 {
     width:20%;
@@ -236,6 +263,27 @@ box-shadow: 13px 13px 30px 2px rgba(0,0,0,0.87);
     border-bottom-right-radius:10px;
     border-top-right-radius:10px;
 }
+.exp1
+{
+	width:20%;
+  	height:30px;
+	padding:10px;
+    background: #000 /*url(ce.png) no-repeat right*/;
+    opacity:0.7;
+	cursor:pointer;
+
+	-webkit-transition-property: width;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.0s;
+
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 0.0s;
+	border-bottom-left-radius:10px;
+	border-top-left-radius:10px;
+}
 img
 {
     width:30px;
@@ -248,13 +296,16 @@ img
     float:right;
 }
 
-.text{
+.text,.text1{
     color:#FFF;
     opacity:0;
 }
 
 .exp:hover {
-    width: 90%;
+    width: 80%;
+}
+.exp1:hover {
+    width: 80%;
 }
 
 .exp:hover div.text{
@@ -270,6 +321,20 @@ img
     transition-delay:0.3s;
     position:absolute;
 }
+.exp1:hover div.text1{
+    opacity:1;
+    font-size:100%;
+    margin-top:5%;
+    margin-right:0.2%;
+
+    -webkit-transition:opacity 0.2s ease-in-out;
+    -moz-transition:opacity 0.2s ease-in-out;
+    -o-transition:opacity 0.2s ease-in-out;
+    transition:opacity 0.2s linear;
+    transition-delay:0.4s;
+    position:absolute;
+	right:15px;
+}
 .menu {
     text-align: right;
     position: absolute;
@@ -281,10 +346,22 @@ img
     margin-top: 10%;
     margin-bottom: 10%;
 }
+.menu1 {
+    text-align: right;
+    position: absolute;
+    width: 12%;
+    top: 0px;
+	height:320px;
+    right: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 .impress-enabled          { pointer-events: none }
 .impress-enabled #impress,
-.impress-enabled .menu{
+.impress-enabled .menu,.menu1{
     pointer-events: auto;
 }
 
@@ -416,6 +493,10 @@ ul.nav, ul.nav2{
     text-align: left;
     padding-left: 130px;
     padding-top: 20px;
+}
+
+ul.nav{
+  font-size:1.1em;
 }
 
 ul.too-much{
