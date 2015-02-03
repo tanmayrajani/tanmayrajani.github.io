@@ -181,6 +181,53 @@ i, em { font-style: italic }
     letter-spacing: -1px;
 }
 
+.blackboom{
+    display: block;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #013539;
+    color: white;
+}
+
+
+.felicific{
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-top: 30px;
+}
+
+.logo{
+  background-image: url('../imgs/logo_big.png');
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 250px;
+}
+
+.letsgo{
+  height:60px;
+  width: 150px;
+  bottom: 40px;
+  right: 40px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: .6em;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.letsgo:hover{
+  background-color: white;
+  color:#013539;
+}
+
 .slide-cyan{
   background: rgba(0,187,212,1);
 background: -moz-radial-gradient(center, ellipse cover, rgba(0,187,212,1) 0%, rgba(0,97,100,1) 55%, rgba(1,50,51,1) 99%, rgba(1,50,51,1) 100%);
@@ -359,7 +406,7 @@ img
     margin-bottom: 10%;
 }
 
-.impress-enabled          { pointer-events: none }
+.impress-enabled{ pointer-events: none }
 .impress-enabled #impress,
 .impress-enabled .menu,.menu1{
     pointer-events: auto;
