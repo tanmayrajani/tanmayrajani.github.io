@@ -1,6 +1,11 @@
 $(window).load(function() { $("#spinner").fadeOut("slow"); });
 
 $(function() {
+	$('.letsgo').click(function() {
+		$('.menu').css('visibility','visible');
+		$('.menu1').css('visibility','visible');
+	});
+
 	$('.ce-link, .it-link, .mba-link, .mon-link').click(function() {
 		$('.slide').removeClass('slide-cyan').removeClass('slide-purple').removeClass('slide-green').removeClass('slide-brown').addClass('slide-blue');
 		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-green').removeClass('body-brown').addClass('body-blue');
