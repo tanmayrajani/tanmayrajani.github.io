@@ -21,21 +21,6 @@ $(function() {
 		$('body').removeClass('body-cyan').removeClass('body-purple').removeClass('body-blue').removeClass('body-brown').addClass('body-green');
 	});
 
-	$('.tech, .cultural').click(function() {
-		$('.slide').removeClass('slide-green').removeClass('slide-purple').removeClass('slide-blue').removeClass('slide-brown').addClass('slide-cyan');
-		$('body').removeClass('body-green').removeClass('body-purple').removeClass('body-blue').removeClass('body-brown').addClass('body-cyan');
-	});
-
-	var branch;
-	var index,len;
-	var day=['monday', 'tuesday','wednesday','thursday','friday'];
-	var branch=['ce', 'ec','ic','it','civil','mech','chem','mba','bmca','robotics','robo2'];
-	var nos=[7,10,11,8,9];
-	var nos2=[7,10,11,8,9,7,7,7,7,1,1];
-	var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh'];
-	var str,str2,template2,template,info2,info,template3,info3;
-	
-	
 	$.getJSON('js/technical.json', function(data) {
 		var branch;
 		var index,len;
