@@ -1,32 +1,4 @@
 {
-  "technical": {
-    "ce": {
-      "first": {
-        "name": "Android man",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "details": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm",
-        "teamsize": "blah",
-        "fees": "10/-",
-        "co-ordinator": "Sachin Tendulkar",
-        "contact":"8866442200"
-      },
-      "second": {
-        "name": "QuizoWeb",
-        "slogan": "blah blah blah blah",
-        "description": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "details": "some more blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-        "rules": "even more blah blah blah blah blah blah blah blah",
-        "date": "12/12/12 xx:xxxm",
-        "teamsize": "blah",
-        "fees": "10/-",
-        "co-ordinator": "Maria Sharapova",
-        "contact":"8878702200"
-      }
-    }
-  },
   "cultural": {
     "monday": {
       "celebrate": "IN A WEDDING",
