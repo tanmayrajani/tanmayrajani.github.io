@@ -39,7 +39,6 @@ $(function() {
 	$.getJSON('js/technical.json', function(data) {
 		var branch;
 		var index,len;
-		
 		var branch=['ce', 'ec','ic','it','civil','mech','chem','mba','bmca','robotics','robo2'];
 		var nos2=[7,10,11,8,9,7,7,7,7,1,1];
 		var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh'];
