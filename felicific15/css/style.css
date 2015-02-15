@@ -64,10 +64,8 @@ td{
 }
 
 .det, .rul{
-    font-size: .71em;
+    font-size: .7em;
     line-height: 1.05;
-    max-height: 400px;
-    overflow: auto;
 }
 
 .details{
