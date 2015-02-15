@@ -78,7 +78,7 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       }
     },
-    "ch": {
+    "chem": {
       "name":"Chemical",
       "tag":"Collision",
       "totalevent":"5",
@@ -100,7 +100,7 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       },
       "second": {
-        "name":"CHEM-ILLUSIONn",
+        "name":"CHEM-ILLUSION",
         "tagline":"Imaginandi vis res vincit veras",
         "description":"In this event, participants have to perform magic using any chemical reaction. After performing their trick, participants need to explain the mechanism behind the trick. Participants can perform as many tricks as they want.",
         "round":"There will be only one round and the best trick will be awarded.",
@@ -405,8 +405,8 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       },
       "second": {
-        "name":"Innovative business Idea/ Technical Poster Presentation",
-        "tagline":"Coming Soon",
+        "name":"Innovative business Idea",
+        "tagline":"Technical Poster Presentation",
         "description":"Participants will prepare a poster in prescribed format on business idea , innovative product development, technical project, research idea, research survey, basic physics or technology.",
         "round":"Coming Soon",
         "rules":"1) Participants strictly follow the guidelines and formats for poster presentation \n2) Team member should have ID cards of their college.\n3) Judge's decision will be considered as final.\n4) Students from different institutes can form a team.\n5) The teams which get selected for final presentation will be inform though mail.\n6) The selected teams need to do registration on or before 28th Feb.\n7) For registration contact coordinator.\n8) On the spot Registration will be permitted on request.\n9) Coordinators have a right to modify rules \n10) On the final day event team has to explain poster contents in front of judges, other participants and guests. \n11) 5  minutes will allocate to team for explanation  in front  of judges  \n12) All the registered participants will be given certificate \n13) The best poster will be awarded by certificate and prize\n\nFormat Specification:  size of the poster :4 � 3 feet or 3 � 2 feet as per the contents, Poster can be prepared portrait  or landscape based on the content and it should having font as per the specification.",
@@ -497,7 +497,7 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       },
       "third": {
-        "name":"INotify(Linux Commands and Shell Script Programming)",
+        "name":"INotify",
         "tagline":"UNIX Commands and shells",
         "description":"Do you remember the word which associates itself with linux? Get ready to get cocooned in the world of kernels and shells. Accomplish the allocated tasks, and win the quest.",
         "round":"Round-1: Elimination Round (Using Pen and Paper)\nEach participant has to solve a question paper having questions on Linux commands and Shell Scripting. The qualifying teams will be selected based on ranking or cut-off marks. Maximum 15 Teams will enter into Round 2. \n\nTime Duration: 45 mins\n\nRound-2: Final Round (Using Computer)\nThis round has a set of difficult problems that the participant is expected to solve with the use of Linux commands and Shell scripting.\n\nTime Duration: 60 Minutes",
@@ -539,7 +539,7 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       },
       "sixth": {
-        "name":"GOOGLE-DE-SCRUTINY(GOOGLE SEARCH)",
+        "name":"GOOGLE-DE-SCRUTINY",
         "tagline":"Entangled in the web",
         "description":"Have you ever gone beyond the first page of �Google�. If you have the tactics to deal with the world of �google�, take a deeper dive. Come forward to face the underlying enigma of Google. Scratch your brains to answer the already answered stuff.",
         "round":"Round 1: Elimination Round (Using Computer and Internet)\nEach participant has to solve a set of internet search tasks. The qualifying participants will be selected based on the number of correctly solved search tasks. Maximum 12 Teams will enter into Round 2.\nTime Duration: 45 Minutes\n\nRound 2: Expert Searching Skills (Using Computer and Internet)\nThis round has a set of internet search tasks that will require expert search skill in order to retrieve asked information. \nTime Duration: 60 Minutes",
@@ -553,7 +553,7 @@
         "eventlink":"http://felicific.org/eventinfo/if-required-in-future.pdf"
       },
       "seventh": {
-        "name":"Seminar on Development of Kernel Device Driver",
+        "name":"Seminar: Kernel Device Driver",
         "tagline":"Crack the Linux Operating System",
         "description":"The operating system, once a dark and mysterious area whose code was restricted to a small number of programmers, can now be readily examined, understood, and modified by anybody with Device Drivers.  Design of Device Driver, Understanding of Data structure of Device Driver, Embedding it in Kernel and verification parts will be cover.",
         "round":"NO ROUND.",
