@@ -621,6 +621,12 @@ ul.nav-civil{
   margin-top: 100px;
 }
 
+.robo-event{
+  margin-top: 50px;
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
 .commit{
   height: 600px;
   width:auto;
