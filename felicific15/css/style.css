@@ -63,6 +63,12 @@ td{
     font-size: .94em;
 }
 
+.rules-link{
+  text-decoration: underline;
+  color: black;
+  font-weight: 400;
+}
+
 .det, .rul{
     font-size: .7em;
     line-height: 1.05;
