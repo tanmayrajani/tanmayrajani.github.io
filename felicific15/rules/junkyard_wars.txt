@@ -1,0 +1,11 @@
+Felicific '15
+EC Event: Junkyard Wars
+
+Rules:
+
+1.Time to think over : Round 1 & 2 (max. timing 2 hours). 
+2.First & second rounds are elimination rounds, remaining teams will get into round 3.
+3.Time limit: Round 1: 30 mins. Round 2: 1 hr 30 mins. Round 3: 2 hours.
+4.Participants are requested to bring DMM & Breadboard with them. No need to bring any components.
+5.No need to take selected component outside junk room. 
+6.Same selected components will be provided at the time of implementation.
