@@ -1,9 +1,7 @@
 $(function(){
 	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
 	{
-		$('body').toggleClass('impress-not-supported');
-		$('body').toggleClass('impress-supported');
-		$('body').toggleClass('impress-enabled');
+
 	}
 	else{
 		$(".ce-link, .it-link, .mba-link, .mon-link").click(function(){
