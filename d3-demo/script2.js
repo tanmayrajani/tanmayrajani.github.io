@@ -66,8 +66,8 @@ function myGraph(el) {
         var link = vis.selectAll("line.link")
             .data(links, function(d) { return d.source.id + "-" + d.target.id; });
 
-        link.enter().insert("line")
-            .attr("class", "link");
+        link.enter().append("line")
+            .attr('stroke', 'black');
 
         link.exit().remove();
 
@@ -78,9 +78,9 @@ function myGraph(el) {
             .attr("class", "node")
             .call(force.drag);
 
-        nodeEnter.append("image")
+        nodeEnter.append("circle")
             .attr("class", "circle")
-            .attr("xlink:href", "https://d3nwyuy0nl342s.cloudfront.net/images/icons/public.png")
+            .attr("r",7)
             .attr("x", "-8px")
             .attr("y", "-8px")
             .attr("width", "16px")

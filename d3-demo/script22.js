@@ -101,7 +101,7 @@ function myGraph(el) {
       var y=  nodeEnter.append("circle")
           .attr('cx', function(d) { return d.x; })
           .attr('cy', function(d) { return d.y; })
-          .attr('r', 2)
+          .attr('r', 7)
           .attr('fill', palette.blue)
           .on('mouseover', function(d){
             d3.select(this).attr('cursor','pointer');
@@ -115,15 +115,11 @@ function myGraph(el) {
           .attr('fill', '#FFFF66')
   			.attr('x', 10)
   			.attr('y', 10)
-  			.attr('text-anchor', 'middle')
+  			.attr('text-anchor', 'beginning')
   			.attr('font-size',  '1.2em')
         .text(function(d) {return d.id})
-        .each(function (d) {
-          if(d.id=='Felicific') y.attr('r',55);
-        })
         .on('click', function(d){
 				  click_event(d.id);
-          y.attr('r',100);
         })
         .on('mouseover', function(d){
           d3.select(this).attr('font-size',  '1.3em')
@@ -168,62 +164,18 @@ function addNewNodeAndLinks (me,newFriends) {
 
 //Currently hardcoded for php
 function click_event (who) {
-  if(who=='Felicific'){
-    graph.addNode("Technical");
-    graph.addNode("Cultural");
-    graph.addLink("Felicific", "Technical");
-    graph.addLink("Felicific", "Cultural");
-    // graph.addLink("PHP", "Zend");
-    // graph.removeNode("nginx");
-    //push friends to newFriends array
-    //addNewNodeAndLinks("PHP",newFriends);
-  }else if(who=='Technical'){
-    graph.addNode("Insilico");
-    graph.addLink("Insilico", "Technical");
-    graph.addNode("Creato");
-    graph.addLink("Creato", "Technical");
-    graph.addNode("BizzBrainz");
-    graph.addLink("BizzBrainz", "Technical");
-    graph.addNode("Collision");
-    graph.addLink("Collision", "Technical");
-    graph.addNode("TechCrusade");
-    graph.addLink("TechCrusade", "Technical");
-    graph.addNode("Dimensions");
-    graph.addLink("Dimensions", "Technical");
-    graph.addNode("TechnoKshetra");
-    graph.addLink("TechnoKshetra", "Technical");
-    graph.addNode("Resonance");
-    graph.addLink("Resonance", "Technical");
-    graph.addNode("Instronics");
-    graph.addLink("Instronics", "Technical");
-    graph.addNode("Robotics");
-    graph.addLink("Robotics", "Technical");
-    graph.removeNode("Felicific");
-    graph.removeNode("Cultural");
-  }
-  else if(who=='Insilico'){
-    graph.addNode("Quizoweb");
-    graph.addLink("Insilico", "Quizoweb");
-    graph.removeNode("Creato");
-    graph.removeNode("BizzBrainz");
-    graph.removeNode("Collision");
-    graph.removeNode("TechCrusade");
-    graph.removeNode("Dimensions");
-    graph.removeNode("TechnoKshetra");
-    graph.removeNode("Resonance");
-    graph.removeNode("Instronics");
-    graph.removeNode("Robotics");
-    graph.removeNode("Technical");
-    graph.removeNode("Cultural");
+  if(who=='PHP'){
+    graph.addNode("Yii");
+    graph.addLink("Yii", "PHP");    
+    graph.removeNode("Apache");
   }
 }
-   
 
 // Initialize with these nodes
-graph.addNode("Felicific");
-// graph.addNode("MySQl");
-// graph.addLink("PHP", "MySQl");
-// graph.addNode("Apache");
-// graph.addNode("nginx");
-// graph.addLink("Apache", "nginx");
-// graph.addLink("Apache", "PHP");
+graph.addNode("MySQl");
+graph.addNode("PHP");
+graph.addLink("PHP", "MySQl");
+graph.addNode("Apache");
+graph.addNode("nginx");
+graph.addLink("Apache", "nginx");
+graph.addLink("Apache", "PHP");
