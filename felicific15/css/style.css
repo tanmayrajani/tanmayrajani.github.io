@@ -28,16 +28,6 @@
 	display: none;
 }
 
-ul.ecec{
-	font-size: .92em;
-	line-height: 1;
-}
-
-ul.too-much{
-	font-size: .88em;
-	line-height: .9;
-}
-
 .not-supported .step {
 	position: relative;
 	opacity: 1;
@@ -50,3 +40,17 @@ ul.too-much{
 	position: fixed;
 }
 
+ul.ecec{
+	font-size: .90em;
+	line-height: 1;
+}
+
+ul.too-much{
+	font-size: .88em;
+	line-height: .9;
+}
+
+.techh{
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
