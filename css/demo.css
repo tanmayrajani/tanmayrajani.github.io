@@ -10,7 +10,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #48a770;
+	color: rgb(192, 107, 152);
 	outline: none;
 }
 
@@ -73,6 +73,7 @@ a:hover, a:focus {
 	text-align: left;
 }
 
+
 .column p {
 	font-weight: 300;
 	font-size: 2em;
@@ -86,7 +87,6 @@ a:hover, a:focus {
        color: #990000;
 }
 
-/* Works in Safari */
 ::selection {
        background-color: #FFA;
        color: #990000;
