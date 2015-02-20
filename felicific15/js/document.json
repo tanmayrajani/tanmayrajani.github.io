@@ -448,7 +448,6 @@
       "twelveth": {
         "name": "Street bowling",
         "description": "The professional bowling is being played in the campus of the college.<br/>6 turns per participant<br/>Max score wins",
-        "rules": "",
         "team": "Individual",
         "time": "Full Day",
         "fees": "10",
@@ -459,26 +458,13 @@
           "c2": "YJ VEENA",
           "p2": "N/A"
         }
-      },
-      "thirteenth": {
-        "name": "Best of the Day",
-        "time": "04:00",
-        "fees": "Not available",
-        "place": "Not available",
-        "co-ordinators": {
-          "c1": "Not available",
-          "p1": "Not available",
-          "c2": "Not available",
-          "p2": "Not available"
-        }
       }
     },
     "thursday": {
       "celebrate": "OFF TO WORK",
       "first": {
-        "name": "Ad Making (Topics will be given while registration)",
-        "description": "Contact event co-ordinators for details.",
-        "rules": "This competition requires maximum 5 members, minimum 1.<br/>The members have to think of a product and draw an advertisement of the product on a sheet of paper within 30 minutes time.<br/>The sheet of paper will be provided by us.<br/>The product must be given a name which should not be the same as the existing products. The name has to be original and the product must have a tagline/slogan.<br/>Members need to present the product advertisement by acting or narrating for a maximum of 2 minutes.<br/>Rulers/Drafters are prohibited.",
+        "name": "Ad Making",
+        "description": "Topics will be given while registration.<br/>This competition requires maximum 5 members, minimum 1.<br/>The members have to think of a product and draw an advertisement of the product on a sheet of paper within 30 minutes time.<br/>The sheet of paper will be provided by us.<br/>The product must be given a name which should not be the same as the existing products. The name has to be original and the product must have a tagline/slogan.<br/>Members need to present the product advertisement by acting or narrating for a maximum of 2 minutes.<br/>Rulers/Drafters are prohibited.",
         "team": "max 5 members & min 1",
         "time": "11:00 to 01:00",
         "fees": "50",
