@@ -25,7 +25,7 @@ $(window).load(function(){
 		var branch=['ce', 'ec','ic','it','civil','mech','chem','mba','bmca','robotics','robo2'];
 		var nos2=[7,10,11,8,9,7,7,7,7,1,1];
 		var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh'];
-		var str,str2,template2,template,info2,info,template3,info3;
+		var str,str2,template,info2,info,template3,info3;
 
 		for (index = 0, len = branch.length; index < len; ++index) {
 			for (var i = 1; i <= nos2[index]; i++) {
@@ -45,14 +45,18 @@ $(window).load(function(){
 		var day=['monday', 'tuesday','wednesday','thursday','friday'];
 		var nos=[7,10,11,8,9];
 		var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh'];
-		var str,str2,template2,template,info2,info,template3,info3;
+		var str,str2,template2,template4,info2,info4;
 
 	    for (index = 0, len = day.length; index < len; ++index) {
 		    for (var i = 1; i <= nos[index]; i++) {
 		   		template2 = '<center><h2 class="titlecenter">{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.name}}}</h2><table class="cult-event" cellspacing="15px" cellpadding="5px"><tr class="trr"><td>Time</td><td>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.time}}}</td> </tr><tr class="trr"><td>Place:</td><td>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.place}}}</td></tr><tr class="trr"><td>Fees:</td><td>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.fees}}}</td></tr><tr class="trr"><td>Co-ordinators:&nbsp;</td><td>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.c1}}}, {{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.p1}}}<br>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.c2}}}, {{{cultural.'+day[index]+'.'+eventNo[i-1]+'.co-ordinators.p2}}}</td></tr></table></center><a class="details" href="#'+day[index]+'"><button class="butt3"><< Back</button></a>';
+		   		template4 = '<center class="titlecenter"><h2>{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.name}}}</h2></center><div class="datas">{{{cultural.'+day[index]+'.'+eventNo[i-1]+'.details}}}</div><a class="details" href="#'+branch[index]+'-'+eventNo[i-1]+'"><button class="butt"><< Back</button></a>';
 	    		info2 = Mustache.to_html(template2, data);
+	    		info4 = Mustache.to_html(template4 data);
 	    		str='#'+day[index]+'-'+eventNo[i-1];
+	    		str2=str+'2';
 	    		$(str).html(info2);
+	    		$(str2).html(info4);
 		   	}
 		}
 	});
