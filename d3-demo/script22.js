@@ -179,3 +179,7 @@ graph.addNode("Apache");
 graph.addNode("nginx");
 graph.addLink("Apache", "nginx");
 graph.addLink("Apache", "PHP");
+
+function addFuckingNode () {
+  graph.addNode($('#textboox').val());
+}
