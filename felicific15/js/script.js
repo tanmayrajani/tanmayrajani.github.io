@@ -43,7 +43,7 @@ $(window).load(function(){
 	$.getJSON('js/document.json', function(data) {
 		var index,len;
 		var day=['monday', 'tuesday','wednesday','thursday','friday'];
-		var nos=[9,11,12,9,9];
+		var nos=[9,11,11,10,9];
 		var eventNo=['first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelveth'];
 		var str,str2,template2,template4,info2,info4;
 
