@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Playing around with AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="somestyles.css"/>
+</head>
+<body>
+<div ng-app="myApp">
+	<div class="fuckyea" ng-controller="FirstCtrl">
+		<textarea class="ohyes" cols="50" rows="25" placeholder="Write some CSS in here, folks! [No semicolon]" autofocus type="text" ng-model="data.message"></textarea>
+		
+	</div>
+
+
+	<div class="showtime" ng-controller="SecondCtrl">
+		<h1>{{data.message|play}}</h1>
+	</div>
+</div>
+
+<script src="lib/angular.min.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

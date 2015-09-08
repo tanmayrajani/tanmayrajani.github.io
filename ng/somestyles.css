@@ -1,0 +1,17 @@
+html{
+	font: Monospace !important;
+}
+
+.showtime{
+	height: 400px;
+	width: 400px;
+	background-color: #346457;
+	margin: 30px;
+	float: right;
+}
+
+textarea{
+	float: left;
+	margin:20px;
+	font-size: 18px
+}
