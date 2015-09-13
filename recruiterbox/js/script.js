@@ -134,6 +134,23 @@ $(".gt").click(function (e) {
 	updateEvents(dates[calIndex][2],dates[calIndex][1],dates[calIndex][3]);	
 })
 
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: calIndex--;
+		$(".showtime").text(dates[calIndex][2]+" "+dates[calIndex][1]+", "+dates[calIndex][3]);
+		updateEvents(dates[calIndex][2],dates[calIndex][1],dates[calIndex][3]);
+        break;
+
+        case 39: calIndex++;
+		$(".showtime").text(dates[calIndex][2]+" "+dates[calIndex][1]+", "+dates[calIndex][3]);
+		updateEvents(dates[calIndex][2],dates[calIndex][1],dates[calIndex][3]);	
+        break;
+
+        default: return; 
+    }
+    e.preventDefault();
+});
+
 $(".today").click(function (e) {
 	$(".showtime").text(currentDate.getDate()+" "+monthNames[currentDate.getMonth()].substring(0,3)+", "+currentDate.getFullYear());
 	updateEvents(currentDate.getDate(),monthNames[currentDate.getMonth()].substring(0,3),currentDate.getFullYear());
