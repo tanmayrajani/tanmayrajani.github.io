@@ -31,7 +31,7 @@ function updateEvents (date,mon,year) {
 		        if(events[index][p][2]==0) events[index][p][2]="00";
 		    }
 
-			$(".vertical").append('<div class="col s8 m12 l12"><div class="card blue-grey darken-1"><div class="card-content white-text"><span class="card-title"><b>'+events[index][2]+'</b></span><span class="right mono">'+date+' '+mon+', '+year+'</span><p class="mono">'+events[index][0][0]+':'+events[index][0][1]+':'+events[index][0][2]+' to '+events[index][1][0]+':'+events[index][1][1]+':'+events[index][1][2]+'</p></div><div class="card-action right"><a href="#" class="edi" data-event="'+index+'"><i class="material-icons">edit</i></a><a href="#" class="del" onclick="delEvent('+index+','+date+',\''+mon+'\','+year+');"><i class="material-icons">delete</i></a></div></div></div>');
+			$(".vertical").append('<div class="col s8 m12 l12"><div class="card blue-grey darken-1"><div class="card-content white-text"><span class="card-title"><b>'+events[index][2]+'</b></span><span class="right mono">'+date+' '+mon+', '+year+'</span><p class="mono">'+events[index][0][0]+':'+events[index][0][1]+':'+events[index][0][2]+' to '+events[index][1][0]+':'+events[index][1][1]+':'+events[index][1][2]+'</p></div><div class="card-action right"><a href="#" class="edi" onclick="editEvent('+index+','+date+',\''+mon+'\','+year+');"><i class="material-icons">edit</i></a><a href="#" class="del" onclick="delEvent('+index+','+date+',\''+mon+'\','+year+');"><i class="material-icons">delete</i></a></div></div></div>');
 		}
 	}
 	if(!flag) $(".vertical").append('<h6 class="center nothing">No events to display!</h6>');
@@ -89,11 +89,24 @@ function goAhead () {
 }
 
 function delEvent (index,date,mon,year) {
-	if(confirm("You sure you want to delete this event?")){
+	if(confirm("Are you sure you want to delete this event?")){
 		events.splice(index,1);
 		updateEvents(date,mon,year);
 	}
-	
+}
+
+function editEvent (index,date,mon,year) {
+	$('#modal2').openModal();
+	$('.title3').val(events[index][2]);
+	$('.ddate3').val(events[index][0][4]+' '+events[index][0][3]+', '+events[index][0][5]);
+	$('.ddate4').val(events[index][1][4]+' '+events[index][1][3]+', '+events[index][1][5]);
+	$('.h3').val(events[index][0][0]);
+	$('.m3').val(events[index][0][1]);
+	$('.s3').val(events[index][0][2]);
+	$('.h4').val(events[index][1][0]);
+	$('.m4').val(events[index][1][1]);
+	$('.s4').val(events[index][1][2]);
+	$('.index').val(index);
 }
 
 $(document).ready(function(){
@@ -131,6 +144,32 @@ $(".create-button").click(function () {
 	if($(".ddate1").val() && $(".ddate2").val() && $(".title1").val() && $(".h1").val() && $(".m1").val() && $(".s1").val() && $(".h2").val() && $(".m2").val() && $(".s2").val() ){
 
 		events.push([[$(".h1").val(),$(".m1").val(),$(".s1").val(),$(".ddate1").val().substring($(".ddate1").val().indexOf(" ")+1,$(".ddate1").val().indexOf(" ")+4),$(".ddate1").val().substring(0,$(".ddate1").val().indexOf(" ")),$(".ddate1").val().substring($(".ddate1").val().indexOf(",")+2,$(".ddate1").val().length)],[$(".h2").val(),$(".m2").val(),$(".s2").val(),$(".ddate2").val().substring($(".ddate2").val().indexOf(" ")+1,$(".ddate2").val().indexOf(" ")+4),$(".ddate2").val().substring(0,$(".ddate2").val().indexOf(" ")),$(".ddate2").val().substring($(".ddate2").val().indexOf(",")+2,$(".ddate2").val().length)],$(".title1").val()]);
+
 		updateEvents($(".ddate1").val().substring(0,$(".ddate1").val().indexOf(" ")),$(".ddate1").val().substring($(".ddate1").val().indexOf(" ")+1,$(".ddate1").val().indexOf(" ")+4),$(".ddate1").val().substring($(".ddate1").val().indexOf(",")+2,$(".ddate1").val().length));
 	}	
 })
+
+$(".update-button").click(function () {
+	if($(".ddate3").val() && $(".ddate4").val() && $(".title3").val() && $(".h3").val() && $(".m3").val() && $(".s3").val() && $(".h4").val() && $(".m4").val() && $(".s4").val() ){
+
+		index = $(".index").val();
+		events[index][2]=$(".title3").val();
+
+		events[index][0][3] = $(".ddate3").val().substring($(".ddate3").val().indexOf(" ")+1,$(".ddate3").val().indexOf(" ")+4);
+		events[index][0][4] = $(".ddate3").val().substring(0,$(".ddate3").val().indexOf(" "));
+		events[index][0][5] = $(".ddate3").val().substring($(".ddate3").val().indexOf(",")+2,$(".ddate3").val().length);
+		events[index][1][3] = $(".ddate4").val().substring($(".ddate4").val().indexOf(" ")+1,$(".ddate4").val().indexOf(" ")+4);
+		events[index][1][4] = $(".ddate4").val().substring(0,$(".ddate4").val().indexOf(" "));
+		events[index][1][5] = $(".ddate4").val().substring($(".ddate4").val().indexOf(",")+2,$(".ddate4").val().length);
+		events[index][0][0] = $('.h3').val();
+		events[index][0][1] = $('.m3').val();
+		events[index][0][2] = $('.s3').val();
+		events[index][1][0] = $('.h4').val();
+		events[index][1][1] = $('.m4').val();
+		events[index][1][2] = $('.s4').val();
+
+		updateEvents($(".ddate3").val().substring(0,$(".ddate3").val().indexOf(" ")),$(".ddate3").val().substring($(".ddate3").val().indexOf(" ")+1,$(".ddate3").val().indexOf(" ")+4),$(".ddate3").val().substring($(".ddate3").val().indexOf(",")+2,$(".ddate3").val().length));
+		$('#modal2').closeModal();
+	}	
+})
+

@@ -36,7 +36,8 @@ body{
 .modal-footer{
 	padding: 10px 25px 25px 0px !important
 }
-.create-button i{
+
+.create-button i,.update-button i{
 	vertical-align: middle;
 }
 
