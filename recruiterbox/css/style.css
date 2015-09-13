@@ -1,0 +1,92 @@
+.container{
+	width:65% ;
+}
+
+button{
+	margin-left: 2px;
+}
+
+.showtime{
+	float: right;
+}
+.vertical{
+	margin-top: 20px;
+	margin-bottom: 70px
+}
+
+.mono{
+	font-family: monospace;
+}
+
+::-moz-selection {
+       background-color: #FFC;
+       color: #990000;
+}
+
+::selection {
+       background-color: #FFC;
+       color: #990000;
+}
+
+body{
+  background: url(../media/bg.png);
+  background-repeat: repeat;
+}
+
+.modal-footer{
+	padding: 10px 25px 25px 0px !important
+}
+.create-button i{
+	vertical-align: middle;
+}
+
+.modal{
+	vertical-align: middle;
+	max-height: 85%;
+	height: 85%;
+}
+
+.modal .modal-content{
+	padding: 12px;
+}
+
+.picker--opened .picker__frame{
+	top:4% !important;
+}
+
+.modal-header{
+  padding: 20px 20px 10px 30px;
+  background-color: #4e342e;
+  color: white;
+}
+
+.nothing{
+	margin-top: 150px;
+}
+
+@media only screen and (max-width : 601px) {
+	.container{
+		width:100% !important;
+	}
+	.upper{
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.calender{
+		width: inherit;
+		margin-top: 6%;	
+	}
+	.showtime{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto
+	}
+	button.other{
+		margin-bottom: 10px
+	}
+	.vertical{
+		margin-top: 50px;
+	}
+
+}

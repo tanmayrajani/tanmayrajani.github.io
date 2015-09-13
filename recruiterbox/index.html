@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Recruiterbox Task</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="center"><h4>Event Manager</h4></div>
+		<div class="upper">
+			<button class="today brown darken-4 waves-effect waves-light btn other">Today</button>
+			<button class="lt brown darken-4 btn waves-effect waves-light other"><i class="material-icons">keyboard_arrow_left</i></button>
+			<button class="gt brown darken-4 btn waves-effect waves-light other"><i class="material-icons">keyboard_arrow_right</i></button>
+			<span class="btn disabled showtime" role="button"></span>
+		</div>
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        	<a class="btn-floating modal-trigger btn-large waves-effect waves-light red new-event" href="#modal1">
+            	<i class="material-icons">playlist_add</i>
+          	</a>
+		</div>
+		<div id="modal1" class="modal">
+			<div class="modal-header"><h5>Add New Event</h5></div>
+			<div class="modal-content">
+				<div class="input-field col s6">
+          			<input placeholder="Event Title" id="et" type="text" required class="validate title1">
+        		</div>
+				<div><h6>Start Time</h6></div>
+				<div class="row">
+					<input type="date" placeholder="Choose Date" required class="datepicker col s12 m12 l12 ddate1"/>
+				
+					<div class="input-field col s4">
+			          <input type="number" required class="h1" placeholder="Hours">
+			        </div>
+					<div class="input-field col s4">
+			          <input type="number" required class="m1" placeholder="Minutes">
+			        </div>
+			        <div class="input-field col s4">
+			          <input type="number" required class="s1" placeholder="Seconds">
+			        </div>
+				</div>
+				<div><h6>End Time</h6></div>
+				<div class="row">
+					<input type="date" placeholder="Choose Date" required class="datepicker col s12 m12 l12 ddate2"/>
+				
+					<div class="input-field col s4">
+			          <input type="number" required class="h2" placeholder="Hours">
+			        </div>
+					<div class="input-field col s4">
+			          <input type="number" required class="m2" placeholder="Minutes">
+			        </div>
+			        <div class="input-field col s4">
+			          <input type="number" required class="s2" placeholder="Seconds">
+			        </div>
+				</div>
+		    </div>
+		    <div class="modal-footer">
+			    <button class="brown darken-4 waves-light btn modal-action modal-close waves-effect create-button"> 
+			    	<span>Create &nbsp;</span><i class="material-icons">note_add</i>
+			    </button>
+		    </div>
+		</div>
+		<div class="vertical"></div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
