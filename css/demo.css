@@ -36,7 +36,6 @@ a:hover, a:focus {
 
 .c-header {
 	margin: 0 auto 3em;
-	padding: 3em;
 	text-align: center;
 }
 
@@ -74,10 +73,10 @@ a:hover, a:focus {
 }
 
 
-.column p {
+.column div.layer {
 	font-weight: 300;
 	font-size: 2em;
-	padding: 0 0 0.5em;
+	padding: 0 0 0.3em;
 	margin: 0;
 	line-height: 1.5;
 }
