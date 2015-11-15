@@ -106,14 +106,18 @@ button {
 .info {
 	text-align: center;
 	font-size: 1.5em;
-	margin-top: 3em;
+	margin-top: 2em;
 	clear: both;
-	padding: 3em 0;
+	padding: 2em 0 0 0;
 	opacity: 0.7;
-	color: #aca89a;
+	color: #a29d8e;
 }
 
-.info a {
+.info2{
+	padding: 0 0 2em 0;
+}
+
+.info2 a {
 	font-weight: 700;
 	font-size: 0.9em;
 }

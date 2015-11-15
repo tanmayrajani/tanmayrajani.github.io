@@ -19,15 +19,15 @@
 			<div class="st-pusher">
 				<nav class="st-menu st-effect-8" id="menu-8">
 					<h2 class="icon icon-stack">Projects Done!</h2>
-					<ul>
-						<li><a target="_blank" href="http://bit.ly/download-quora-answers">Download Quora Answers (Chrome Extension)</a></li>
-						<li><a target="_blank" href="http://felicific.org/2014">Felicific '14 Website</a></li>
-						<li><a target="_blank" href="http://ddit.ac.in/csi">CSI DDU Student Branch Website</a></li>
-						<li><a target="_blank" href="http://felicific.org/2015">Felicific '15 Website</a></li>
-						<li><a target="_blank" href="http://pricelabs.co">PriceLabs Website Redesign as Intern</a></li>
-						<li><a target="_blank" href="http://tanmayrajani.github.io/15-puzzle">15 Puzzle Game</a></li>
-						<li><a target="_blank" href="https://github.com/tanmayrajani/node-scrap">NodeJS scrapers</a></li>
-						<li><a target="_blank" href="https://traveltraders.com.au/tanmay">TravelTraders Website &amp; Admin Panel [In progress]</a></li>
+					<ul id="sidebaar">
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="80"><a target="_blank" href="http://bit.ly/download-quora-answers">Download Quora Answers (Chrome Extension)</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="160"><a target="_blank" href="http://felicific.org/2014">Felicific '14 Website</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="240"><a target="_blank" href="http://ddit.ac.in/csi">CSI DDU Student Branch Website</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="320"><a target="_blank" href="http://felicific.org/2015">Felicific '15 Website</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="400"><a target="_blank" href="http://pricelabs.co">PriceLabs Website Redesign as Intern</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="480"><a target="_blank" href="http://tanmayrajani.github.io/15-puzzle">15 Puzzle Game</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="560"><a target="_blank" href="https://github.com/tanmayrajani/node-scrap">NodeJS scrapers</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="640"><a target="_blank" href="https://traveltraders.com.au/tanmay">TravelTraders Website &amp; Admin Panel [In progress]</a></li>
 					</ul>
 				</nav>
 				<div class="st-content">
@@ -52,8 +52,10 @@
 								<div class="layer" data-show-effect="jumpInRight" data-show-delay="500"><a target="_blank" href="https://www.facebook.com/tanmay.rajani/video_movies_watch">Movie</a> Buff.</div>
 								<div class="layer" data-show-effect="jumpInRight" data-show-delay="600">A Grammar Nazi.</div>
 							</div>
-							<div class="info">
-								<p>Shoot me down, but I won't fall, I am TITANIUM.</p>
+							<div class="info layer" data-show-effect="jumpInRight" data-show-delay="400">
+								<p>Shoot me down, but I won't fall, I am TITANIUM... &nbsp;&nbsp;&nbsp;Just kidding :D</p>
+							</div>
+							<div class="info info2">
 								<small>&copy; 2015. No Rights Reserved by <a href="https://facebook.com/tanmay.rajani">Tanmay Rajani</a></small>
 							</div>
 						</div>
@@ -77,7 +79,17 @@
 			  $(this).magicLayout({
 			   container: $('#kk')
 			  });
+			  
 			})(jQuery);
+			$("button").click(function () {
+				$("ul").show();
+				$(this).magicLayout({
+					container: $('#sidebaar')
+				});
+			})
+			$(".st-pusher").click(function () {
+				$("ul").hide();
+			});
 		</script>
 	</body>
 </html>
