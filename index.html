@@ -27,7 +27,7 @@
 						<li class="layer" data-show-effect="jumpInRight" data-show-delay="400"><a target="_blank" href="http://pricelabs.co">PriceLabs Website Redesign as Intern</a></li>
 						<li class="layer" data-show-effect="jumpInRight" data-show-delay="480"><a target="_blank" href="http://tanmayrajani.github.io/15-puzzle">15 Puzzle Game</a></li>
 						<li class="layer" data-show-effect="jumpInRight" data-show-delay="560"><a target="_blank" href="https://github.com/tanmayrajani/node-scrap">NodeJS scrapers</a></li>
-						<li class="layer" data-show-effect="jumpInRight" data-show-delay="640"><a target="_blank" href="https://traveltraders.com.au/tanmay">TravelTraders Website &amp; Admin Panel [In progress]</a></li>
+						<li class="layer" data-show-effect="jumpInRight" data-show-delay="640"><a target="_blank" href="http://traveltraders.com.au/tanmay">TravelTraders Website &amp; Admin Panel</a></li>
 					</ul>
 				</nav>
 				<div class="st-content">
@@ -81,14 +81,11 @@
 			  });
 			  
 			})(jQuery);
-			$("button").click(function () {
-				$("ul").show();
-				$(this).magicLayout({
-					container: $('#sidebaar')
-				});
-			})
+			
 			$(".st-pusher").click(function () {
-				$("ul").hide();
+				if (!$("#st-container").hasClass("st-menu-open")) {
+					$("ul").hide();
+				}
 			});
 		</script>
 	</body>

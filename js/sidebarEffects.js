@@ -28,6 +28,10 @@
 					classie.add( container, 'st-menu-open' );
 				}, 25 );	
 				document.addEventListener( eventtype, bodyClickFn ); 
+				$("ul").show();
+				$(this).magicLayout({
+					container: $('#sidebaar')
+				});
 			});		
 		});	
 	}	
