@@ -1,0 +1,38 @@
+
+html{
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    font-size: large;
+}
+
+.row{
+    padding:0 2%;
+    border:2px dashed black;
+}
+
+.portion-le{
+    min-height: 90vh;
+    width: 45%;
+    float: left;
+    margin:0 1.1%;
+    font-size: 20px;
+}
+
+.portion-ri{
+    background-color: azure;
+    min-height: 90vh;
+    float: right;
+    width: 47.5%;
+    border-left: 2px dashed black;
+
+}
+
+#tete{
+    padding: 10px;
+    font-size: 20px;
+    background-color: azure;
+    border:none;
+}

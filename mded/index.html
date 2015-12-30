@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Markdown Editor</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div ng-app="myApp">
+    <h2 class="h2">Realtime Markdown Editor using AngularJS</h2>
+    <div class="row">
+        <div class="col-md-6 portion-le" ng-controller="FirstCtrl">
+            <textarea autofocus ng-model="data.message" name="tete" id="tete" cols="73" rows="42"></textarea>
+        </div>
+        <div class="col-md-6 portion-ri" ng-controller="SecondCtrl">
+            <div bind-html-unsafe="data.message|play"></div>
+            <!--<span>{{data.message|play}}</span>-->
+        </div>
+    </div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
