@@ -87,6 +87,7 @@
   .badge-neutral{ background: var(--color-background-secondary); color: var(--color-text-secondary); }
   .modeNote { font-size: 14px; color: var(--color-text-secondary); margin: 10px 0 0; }
   .table-wrap { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+  .numbered-input-container { text-align: right; }
 </style>
 
 <div class="root">
@@ -279,8 +280,8 @@ function renderConfig() {
   document.getElementById('configBody').innerHTML = categories.map((c, i) => `
     <tr data-idx="${i}">
       <td><input type="text" data-field="name" value="${c.name}"></td>
-      <td><input type="number" data-field="current" value="${c.current}" step="0.01" min="0" max="100"></td>
-      <td><input type="number" data-field="target"  value="${c.target}"  step="0.01" min="0" max="100"></td>
+      <td class="numbered-input-container"><input type="number" data-field="current" value="${c.current}" step="0.01" min="0" max="100"></td>
+      <td class="numbered-input-container"><input type="number" data-field="target"  value="${c.target}"  step="0.01" min="0" max="100"></td>
       <td class="gap-cell" style="text-align:right;">${gapPill(c.target - c.current)}</td>
       <td><button class="del-btn" title="Remove">×</button></td>
     </tr>
