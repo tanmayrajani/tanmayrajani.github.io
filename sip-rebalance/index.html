@@ -24,61 +24,41 @@
   * { box-sizing: border-box; }
   .root { padding: 1rem 0; font-family: var(--font-sans); max-width: 960px; margin: 0 auto; color: var(--color-text-primary); }
   .section-label { font-size: 14px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 8px; }
-  .tabs { display: flex; gap: 0; margin-bottom: 1.5rem; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); overflow: hidden; width: fit-content; }
-  .tab { padding: 6px 18px; font-size: 14px; cursor: pointer; background: transparent; border: none; color: var(--color-text-secondary); border-right: 0.5px solid var(--color-border-secondary); }
-  .tab:last-child { border-right: none; }
-  .tab.active { background: var(--color-background-secondary); color: var(--color-text-primary); font-weight: 500; }
-  .panel { display: none; }
-  .panel.active { display: block; }
 
-  /* Config panel */
-  .config-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  .config-table th { text-align: left; font-size: 14px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; padding: 6px 8px; border-bottom: 0.5px solid var(--color-border-tertiary); font-weight: 500; }
-  .config-table th.num { text-align: right; }
-  .config-table td { padding: 5px 6px; border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: middle; color: var(--color-text-primary); }
-  .config-table tr:last-child td { border-bottom: none; }
-  .config-table input[type=number] { width: 80px; text-align: right; padding: 4px 6px 4px 6px; font-size: 14px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; background: var(--color-background-primary); color: var(--color-text-primary); }
-  .config-table input[type=number]:focus { outline: none; border-color: var(--color-border-primary); }
-  .config-table input[type=text] { width: 100%; padding: 4px 6px; font-size: 14px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; background: var(--color-background-primary); color: var(--color-text-primary); }
-  .config-table input[type=text]:focus { outline: none; border-color: var(--color-border-primary); }
-  .gap-pill { font-size: 14px; padding: 2px 7px; border-radius: 10px; font-weight: 500; display: inline-block; min-width: 52px; text-align: center; }
-  .pill-green  { background: var(--color-background-success); color: var(--color-text-success); }
-  .pill-red    { background: var(--color-background-danger);  color: var(--color-text-danger);  }
-  .pill-amber  { background: var(--color-background-warning); color: var(--color-text-warning); }
-  .pill-gray   { background: var(--color-background-secondary); color: var(--color-text-secondary); }
-  .sum-row { display: flex; gap: 16px; margin: 10px 0 0; font-size: 14px; color: var(--color-text-secondary); align-items: center; flex-wrap: wrap; }
-  .sum-chip { display: flex; align-items: center; gap: 5px; }
-  .sum-val { font-weight: 500; font-size: 14px; }
-  .sum-val.warn { color: var(--color-text-danger); }
-  .sum-val.ok   { color: var(--color-text-success); }
-  .add-row-btn { margin-top: 10px; padding: 5px 14px; font-size: 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); cursor: pointer; background: transparent; color: var(--color-text-secondary); }
-  .del-btn { background: none; border: none; cursor: pointer; color: var(--color-text-secondary); font-size: 16px; padding: 0 4px; line-height: 1; }
-  .del-btn:hover { color: var(--color-text-danger); }
-  input[type=number] {
-    -webkit-appearance: textfield;
-    -moz-appearance:    textfield;
-    appearance:         textfield;
-  }
-
-  /* Allocator panel */
+  /* Amount + mode controls */
   .amount-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem; }
   .amount-row input[type=range] { flex: 1; }
   .amount-display { font-size: 20px; font-weight: 500; min-width: 110px; text-align: right; }
   .toggle-row { display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap; }
   .toggle-btn { padding: 5px 14px; font-size: 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); cursor: pointer; background: transparent; color: var(--color-text-secondary); }
   .toggle-btn.active { background: var(--color-background-primary); color: var(--color-text-primary); border-color: var(--color-border-primary); font-weight: 500; }
+
+  /* Summary cards */
   .grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 1.25rem; }
   .metric-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.65rem 1rem; }
   .metric-label { font-size: 14px; color: var(--color-text-secondary); margin: 0 0 3px; }
   .metric-val { font-size: 17px; font-weight: 500; margin: 0; }
   .metric-val.pos { color: var(--color-text-success); }
   .metric-val.neg { color: var(--color-text-danger); }
+
+  /* Unified table */
+  .table-wrap { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
   .alloc-table { width: 100%; border-collapse: collapse; font-size: 14px; }
   .alloc-table th { text-align: left; font-weight: 500; font-size: 14px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; padding: 6px 8px; border-bottom: 0.5px solid var(--color-border-tertiary); }
   .alloc-table th.num { text-align: right; }
-  .alloc-table td { padding: 7px 8px; border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: middle; color: var(--color-text-primary); }
+  .alloc-table td { padding: 6px 8px; border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: middle; color: var(--color-text-primary); }
   .alloc-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
   .alloc-table tr:last-child td { border-bottom: none; }
+  .alloc-table input[type=text] { width: 100%; padding: 4px 6px; font-size: 14px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; background: var(--color-background-primary); color: var(--color-text-primary); }
+  .alloc-table input[type=number] { width: 72px; text-align: right; padding: 4px 6px; font-size: 14px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; background: var(--color-background-primary); color: var(--color-text-primary); }
+  .alloc-table input:focus { outline: none; border-color: var(--color-border-primary); }
+  .alloc-table input:disabled { opacity: 0.4; cursor: not-allowed; }
+  input[type=number] {
+    -webkit-appearance: textfield;
+    -moz-appearance:    textfield;
+    appearance:         textfield;
+  }
+
   .bar-wrap { background: var(--color-border-tertiary); border-radius: 2px; height: 5px; min-width: 50px; overflow: hidden; }
   .bar-fill { height: 5px; border-radius: 2px; }
   .badge { display: inline-block; font-size: 14px; padding: 2px 7px; border-radius: 4px; font-weight: 500; white-space: nowrap; }
@@ -86,67 +66,62 @@
   .badge-amber  { background: var(--color-background-warning); color: var(--color-text-warning); }
   .badge-red    { background: var(--color-background-danger);  color: var(--color-text-danger);  }
   .badge-neutral{ background: var(--color-background-secondary); color: var(--color-text-secondary); }
+
+  /* Invest-this-month cell: fixed icon slot keeps amounts right-aligned across states */
+  .invest-wrap { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
+  .invest-amt { font-variant-numeric: tabular-nums; }
+  .invest-amt.locked-amt { color: var(--color-text-primary); font-weight: 500; }
+  .icon-btn { flex: 0 0 18px; width: 18px; height: 18px; line-height: 18px; text-align: center; background: none; border: none; cursor: pointer; color: var(--color-text-secondary); font-size: 13px; padding: 0; }
+  .icon-btn:hover { color: var(--color-text-primary); }
+  .icon-btn.locked { color: var(--color-text-warning); }
+  .invest-input { width: 90px; text-align: right; padding: 4px 6px; font-size: 14px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; background: var(--color-background-primary); color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+  .invest-input:focus { outline: none; border-color: var(--color-border-primary); }
+  .invest-input.err { border-color: var(--color-text-danger); }
+  .lock-err { font-size: 12px; color: var(--color-text-danger); margin-top: 3px; text-align: right; }
+
+  .del-btn { background: none; border: none; cursor: pointer; color: var(--color-text-secondary); font-size: 16px; padding: 0 4px; line-height: 1; }
+  .del-btn:hover { color: var(--color-text-danger); }
+
+  .sum-row { display: flex; gap: 16px; margin: 10px 0 0; font-size: 14px; color: var(--color-text-secondary); align-items: center; flex-wrap: wrap; }
+  .sum-chip { display: flex; align-items: center; gap: 5px; }
+  .sum-val { font-weight: 500; font-size: 14px; }
+  .sum-val.warn { color: var(--color-text-danger); }
+  .sum-val.ok   { color: var(--color-text-success); }
+  .add-row-btn { margin-top: 10px; padding: 5px 14px; font-size: 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); cursor: pointer; background: transparent; color: var(--color-text-secondary); }
   .modeNote { font-size: 14px; color: var(--color-text-secondary); margin: 10px 0 0; }
-  .table-wrap { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
-  .numbered-input-container { text-align: right; }
 </style>
 
 <div class="root">
-  <div class="tabs" id="tabs">
-    <button class="tab active" data-tab="allocate">Allocator</button>
-    <button class="tab" data-tab="config">Edit portfolio</button>
+  <p class="section-label">Monthly investment amount</p>
+  <div class="amount-row">
+    <input type="range" id="amountSlider" min="10000" max="500000" step="5000" value="100000">
+    <span class="amount-display" id="amountDisplay">₹1,00,000</span>
   </div>
-
-  <!-- ALLOCATOR PANEL -->
-  <div class="panel active" id="panel-allocate">
-    <p class="section-label">Monthly investment amount</p>
-    <div class="amount-row">
-      <input type="range" id="amountSlider" min="10000" max="500000" step="5000" value="100000">
-      <span class="amount-display" id="amountDisplay">₹1,00,000</span>
-    </div>
-    <div class="toggle-row" id="toggleRow">
-      <button class="toggle-btn active" data-mode="proportional">Proportional to target</button>
-      <button class="toggle-btn" data-mode="need">Buy only underweight</button>
-    </div>
-    <div class="grid4" id="summaryCards"></div>
-    <div class="table-wrap">
-      <table class="alloc-table">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th class="num">Current</th>
-            <th class="num">Target</th>
-            <th class="num">Gap</th>
-            <th>Status</th>
-            <th class="num">Invest this month</th>
-          </tr>
-        </thead>
-        <tbody id="allocBody"></tbody>
-        <tfoot id="allocFoot"></tfoot>
-      </table>
-    </div>
-    <p class="modeNote" id="modeNote"></p>
+  <div class="toggle-row" id="toggleRow">
+    <button class="toggle-btn active" data-mode="proportional">Proportional to target</button>
+    <button class="toggle-btn" data-mode="need">Buy only underweight</button>
   </div>
-
-  <!-- CONFIG PANEL -->
-  <div class="panel" id="panel-config">
-    <div class="table-wrap">
-      <table class="config-table">
-        <thead>
-          <tr>
-            <th style="width:38%">Category</th>
-            <th class="num" style="width:18%">Current %</th>
-            <th class="num" style="width:18%">Target %</th>
-            <th class="num" style="width:18%">Gap</th>
-            <th style="width:8%"></th>
-          </tr>
-        </thead>
-        <tbody id="configBody"></tbody>
-      </table>
-    </div>
-    <div class="sum-row" id="sumRow"></div>
-    <button class="add-row-btn" id="addRowBtn">+ Add category</button>
+  <div class="grid4" id="summaryCards"></div>
+  <div class="table-wrap">
+    <table class="alloc-table">
+      <thead>
+        <tr>
+          <th style="width:20%">Category</th>
+          <th class="num" style="width:11%">Current %</th>
+          <th class="num" style="width:11%">Target %</th>
+          <th class="num" style="width:10%">Gap</th>
+          <th style="width:25%">Status</th>
+          <th class="num" style="width:19%">Invest this month</th>
+          <th style="width:4%"></th>
+        </tr>
+      </thead>
+      <tbody id="allocBody"></tbody>
+      <tfoot id="allocFoot"></tfoot>
+    </table>
   </div>
+  <div class="sum-row" id="sumRow"></div>
+  <button class="add-row-btn" id="addRowBtn">+ Add category</button>
+  <p class="modeNote" id="modeNote"></p>
 </div>
 
 <script>
@@ -167,7 +142,12 @@ const DEFAULT_CATEGORIES = [
 let categories = DEFAULT_CATEGORIES.map(c => ({ ...c }));
 let mode = 'proportional';
 let amount = 100000;
+let editingIdx = null;   // row index whose lock amount is being edited
+let editVal = 0;         // value shown in the open edit input
+let editError = null;    // inline error message for a blocked save
 
+const STEP = 5000;
+const MIN_AMOUNT = 10000;
 const LS_KEY = 'sip-rebalance-state';
 
 function saveState() {
@@ -180,90 +160,125 @@ function saveState() {
     if (saved && Array.isArray(saved.categories) && saved.categories.length > 0) {
       categories = saved.categories;
       if (saved.mode === 'proportional' || saved.mode === 'need') mode = saved.mode;
-      if (typeof saved.amount === 'number' && saved.amount >= 10000) amount = saved.amount;
+      if (typeof saved.amount === 'number' && saved.amount >= MIN_AMOUNT) amount = saved.amount;
     }
   } catch (e) { /* corrupted storage — use defaults */ }
 })();
 
-// Tab switching
-document.getElementById('tabs').addEventListener('click', function(e) {
-  const btn = e.target.closest('[data-tab]');
-  if (!btn) return;
-  const tab = btn.dataset.tab;
-  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
-  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + tab));
-  if (tab === 'allocate') renderAllocator();
-  if (tab === 'config')   renderConfig();
-});
-
-// Sync slider and mode buttons to loaded state
-document.getElementById('amountSlider').value = amount;
-document.getElementById('amountDisplay').textContent = '₹' + amount.toLocaleString('en-IN');
-document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
-
-// Mode toggle
-document.getElementById('toggleRow').addEventListener('click', function(e) {
-  const btn = e.target.closest('[data-mode]');
-  if (!btn) return;
-  mode = btn.dataset.mode;
-  document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
-  saveState();
-  renderAllocator();
-});
-
-// Slider
-document.getElementById('amountSlider').addEventListener('input', function() {
-  amount = parseInt(this.value);
-  document.getElementById('amountDisplay').textContent = '₹' + amount.toLocaleString('en-IN');
-  saveState();
-  renderAllocator();
-});
-
-// Add category
-document.getElementById('addRowBtn').addEventListener('click', function() {
-  categories.push({ name: 'New category', current: 0, target: 0 });
-  saveState();
-  renderConfig();
-});
-
-// Config table — event delegation
-document.getElementById('configBody').addEventListener('input', function(e) {
-  const el = e.target;
-  const row = el.closest('tr');
-  if (!row) return;
-  const idx = parseInt(row.dataset.idx);
-  if (el.dataset.field === 'name')    categories[idx].name    = el.value;
-  if (el.dataset.field === 'current') categories[idx].current = parseFloat(el.value) || 0;
-  if (el.dataset.field === 'target')  categories[idx].target  = parseFloat(el.value) || 0;
-  updateConfigGap(row, idx);
-  updateSumRow();
-  saveState();
-});
-
-document.getElementById('configBody').addEventListener('click', function(e) {
-  const btn = e.target.closest('.del-btn');
-  if (!btn) return;
-  const idx = parseInt(btn.closest('tr').dataset.idx);
-  categories.splice(idx, 1);
-  saveState();
-  renderConfig();
-});
-
-function gapPill(gap) {
-  const sign = gap > 0 ? '+' : '';
-  const label = sign + gap.toFixed(2) + '%';
-  if (gap > 1)  return `<span class="gap-pill pill-green">${label}</span>`;
-  if (gap > 0)  return `<span class="gap-pill pill-amber">${label}</span>`;
-  if (gap < -1) return `<span class="gap-pill pill-red">${label}</span>`;
-  if (gap < 0)  return `<span class="gap-pill pill-amber">${label}</span>`;
-  return `<span class="gap-pill pill-gray">0.00%</span>`;
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function isLocked(c) { return typeof c.locked === 'number'; }
+function sumLocked(exceptIdx) {
+  return categories.reduce((a, c, i) => a + (isLocked(c) && i !== exceptIdx ? c.locked : 0), 0);
 }
 
-function updateConfigGap(row, idx) {
-  const c = categories[idx];
-  row.querySelector('.gap-cell').innerHTML = gapPill(c.target - c.current);
+// --- Calculation ---
+function computeAllocations() {
+  const pool = Math.max(0, amount - sumLocked());
+  const unlocked = categories.filter(c => !isLocked(c));
+  const denomTarget = unlocked.reduce((a, c) => a + c.target, 0);
+  const denomGap    = unlocked.reduce((a, c) => a + Math.max(0, c.target - c.current), 0);
+  return categories.map(c => {
+    const gap = c.target - c.current;
+    let alloc;
+    if (isLocked(c)) {
+      alloc = c.locked;
+    } else if (mode === 'need') {
+      alloc = denomGap > 0 ? (Math.max(0, gap) / denomGap) * pool : 0;
+    } else {
+      alloc = denomTarget > 0 ? (c.target / denomTarget) * pool : 0;
+    }
+    return { ...c, gap, alloc: Math.round(alloc), locked: isLocked(c) };
+  });
 }
 
+function getBadge(gap) {
+  if (gap > 2)   return '<span class="badge badge-green">Underweight</span>';
+  if (gap > 0)   return '<span class="badge badge-amber">Slightly under</span>';
+  if (gap === 0) return '<span class="badge badge-neutral">On target</span>';
+  if (gap > -2)  return '<span class="badge badge-amber">Slightly over</span>';
+  return '<span class="badge badge-red">Overweight</span>';
+}
+function getBarColor(gap) {
+  if (gap > 2)  return '#1D9E75';
+  if (gap > 0)  return '#EF9F27';
+  if (gap < -2) return '#E24B4A';
+  return '#888780';
+}
+
+// --- Cell builders ---
+function gapHtml(gap) {
+  const color = gap > 0 ? 'var(--color-text-success)' : gap < 0 ? 'var(--color-text-danger)' : 'var(--color-text-secondary)';
+  const sign  = gap > 0 ? '+' : '';
+  return `<span style="color:${color};font-weight:500;">${sign}${gap.toFixed(2)}%</span>`;
+}
+function statusHtml(a) {
+  const barPct = Math.round(Math.min(100, a.target > 0 ? (a.current / Math.max(a.current, a.target)) * 100 : 100));
+  return `<div style="display:flex;align-items:center;gap:6px;">
+      <div class="bar-wrap" style="flex:1;"><div class="bar-fill" style="width:${barPct}%;background:${getBarColor(a.gap)};"></div></div>
+      ${getBadge(a.gap)}
+    </div>`;
+}
+function investCellHtml(i, a, locked, editing) {
+  if (editing) {
+    return `<div class="invest-wrap">
+        <input class="invest-input ${editError ? 'err' : ''}" type="number" min="0" step="1000" value="${editVal}" data-edit-idx="${i}">
+        <span class="icon-btn"></span>
+      </div>${editError ? `<div class="lock-err">${editError}</div>` : ''}`;
+  }
+  if (locked) {
+    return `<div class="invest-wrap">
+        <span class="invest-amt locked-amt">₹${a.alloc.toLocaleString('en-IN')}</span>
+        <button class="icon-btn locked" data-lock-toggle="${i}" title="Locked — click to unlock">🔒</button>
+      </div>`;
+  }
+  const color = a.alloc > 0 ? 'var(--color-text-primary)' : 'var(--color-text-secondary)';
+  return `<div class="invest-wrap">
+      <span class="invest-amt" style="color:${color};">₹${a.alloc.toLocaleString('en-IN')}</span>
+      <button class="icon-btn" data-edit="${i}" title="Lock an amount">✏️</button>
+    </div>`;
+}
+
+// --- Rendering ---
+function renderRows(allocs) {
+  document.getElementById('allocBody').innerHTML = categories.map((c, i) => {
+    const a = allocs[i];
+    const locked = isLocked(c);
+    return `<tr data-idx="${i}">
+      <td><input type="text" data-field="name" value="${esc(c.name)}"></td>
+      <td class="num"><input type="number" data-field="current" value="${c.current}" step="0.01" min="0" max="100"></td>
+      <td class="num"><input type="number" data-field="target" value="${c.target}" step="0.01" min="0" max="100" ${locked ? 'disabled title="Unlock to edit target"' : ''}></td>
+      <td class="num gap-cell">${gapHtml(a.gap)}</td>
+      <td class="status-cell">${statusHtml(a)}</td>
+      <td class="num invest-cell">${investCellHtml(i, a, locked, editingIdx === i)}</td>
+      <td><button class="del-btn" title="Remove">×</button></td>
+    </tr>`;
+  }).join('');
+}
+
+function refreshSummary(allocs) {
+  const under  = allocs.filter(c => c.gap > 0).length;
+  const over   = allocs.filter(c => c.gap < 0).length;
+  const maxGap = allocs.length ? Math.max(...allocs.map(c => Math.abs(c.gap))) : 0;
+  document.getElementById('summaryCards').innerHTML = `
+    <div class="metric-card"><p class="metric-label">Monthly amount</p><p class="metric-val">₹${amount.toLocaleString('en-IN')}</p></div>
+    <div class="metric-card"><p class="metric-label">Underweight</p><p class="metric-val pos">${under}</p></div>
+    <div class="metric-card"><p class="metric-label">Overweight</p><p class="metric-val neg">${over}</p></div>
+    <div class="metric-card"><p class="metric-label">Biggest gap</p><p class="metric-val">${maxGap.toFixed(2)}%</p></div>
+  `;
+}
+function refreshFooter(allocs) {
+  const totalAlloc = allocs.reduce((a, c) => a + c.alloc, 0);
+  document.getElementById('allocFoot').innerHTML = `
+    <tr style="background:var(--color-background-secondary);">
+      <td colspan="5" style="padding:8px;font-weight:500;font-size:14px;">Total allocated</td>
+      <td class="num" style="padding:8px;font-weight:500;">
+        <div class="invest-wrap"><span class="invest-amt">₹${totalAlloc.toLocaleString('en-IN')}</span><span class="icon-btn"></span></div>
+      </td>
+      <td></td>
+    </tr>`;
+}
 function updateSumRow() {
   const sumCurrent = categories.reduce((a, c) => a + c.current, 0);
   const sumTarget  = categories.reduce((a, c) => a + c.target,  0);
@@ -276,97 +291,178 @@ function updateSumRow() {
     ${!cOk || !tOk ? '<span style="color:var(--color-text-warning);font-size:14px;">⚠ totals should sum to 100%</span>' : ''}
   `;
 }
-
-function renderConfig() {
-  document.getElementById('configBody').innerHTML = categories.map((c, i) => `
-    <tr data-idx="${i}">
-      <td><input type="text" data-field="name" value="${c.name}"></td>
-      <td class="numbered-input-container"><input type="number" data-field="current" value="${c.current}" step="0.01" min="0" max="100"></td>
-      <td class="numbered-input-container"><input type="number" data-field="target"  value="${c.target}"  step="0.01" min="0" max="100"></td>
-      <td class="gap-cell" style="text-align:right;">${gapPill(c.target - c.current)}</td>
-      <td><button class="del-btn" title="Remove">×</button></td>
-    </tr>
-  `).join('');
-  updateSumRow();
-}
-
-// --- Allocator ---
-function computeAllocations() {
-  const gaps      = categories.map(c => Math.max(0, c.target - c.current));
-  const totalGap  = gaps.reduce((a, b) => a + b, 0);
-  const totalTarget = categories.reduce((a, c) => a + c.target, 0);
-  return categories.map((c, i) => {
-    const gap = c.target - c.current;
-    let alloc = 0;
-    if (mode === 'need') {
-      alloc = totalGap > 0 ? (Math.max(0, gap) / totalGap) * amount : 0;
-    } else {
-      alloc = totalTarget > 0 ? (c.target / totalTarget) * amount : 0;
-    }
-    return { ...c, gap, alloc: Math.round(alloc) };
-  });
-}
-
-function getBadge(gap) {
-  if (gap > 2)   return '<span class="badge badge-green">Underweight</span>';
-  if (gap > 0)   return '<span class="badge badge-amber">Slightly under</span>';
-  if (gap === 0) return '<span class="badge badge-neutral">On target</span>';
-  if (gap > -2)  return '<span class="badge badge-amber">Slightly over</span>';
-  return '<span class="badge badge-red">Overweight</span>';
-}
-
-function getBarColor(gap) {
-  if (gap > 2)  return '#1D9E75';
-  if (gap > 0)  return '#EF9F27';
-  if (gap < -2) return '#E24B4A';
-  return '#888780';
-}
-
-function renderAllocator() {
-  const allocs = computeAllocations();
-  const totalAlloc = allocs.reduce((a, c) => a + c.alloc, 0);
-  const under = allocs.filter(c => c.gap > 0).length;
-  const over  = allocs.filter(c => c.gap < 0).length;
-  const maxGap = allocs.length ? Math.max(...allocs.map(c => Math.abs(c.gap))) : 0;
-
-  document.getElementById('summaryCards').innerHTML = `
-    <div class="metric-card"><p class="metric-label">Monthly amount</p><p class="metric-val">₹${amount.toLocaleString('en-IN')}</p></div>
-    <div class="metric-card"><p class="metric-label">Underweight</p><p class="metric-val pos">${under}</p></div>
-    <div class="metric-card"><p class="metric-label">Overweight</p><p class="metric-val neg">${over}</p></div>
-    <div class="metric-card"><p class="metric-label">Biggest gap</p><p class="metric-val">${maxGap.toFixed(2)}%</p></div>
-  `;
-
-  document.getElementById('allocBody').innerHTML = allocs.map(c => {
-    const gapColor = c.gap > 0 ? 'var(--color-text-success)' : c.gap < 0 ? 'var(--color-text-danger)' : 'var(--color-text-secondary)';
-    const barPct = Math.round(Math.min(100, c.target > 0 ? (c.current / Math.max(c.current, c.target)) * 100 : 100));
-    const sign = c.gap > 0 ? '+' : '';
-    return `<tr>
-      <td>${c.name}</td>
-      <td class="num">${c.current.toFixed(2)}%</td>
-      <td class="num">${c.target.toFixed(2)}%</td>
-      <td class="num" style="color:${gapColor};font-weight:500;">${sign}${c.gap.toFixed(2)}%</td>
-      <td>
-        <div style="display:flex;align-items:center;gap:6px;">
-          <div class="bar-wrap" style="flex:1;"><div class="bar-fill" style="width:${barPct}%;background:${getBarColor(c.gap)};"></div></div>
-          ${getBadge(c.gap)}
-        </div>
-      </td>
-      <td class="num" style="font-weight:${c.alloc > 0 ? '500' : '400'};color:${c.alloc > 0 ? 'var(--color-text-primary)' : 'var(--color-text-secondary)'};">${c.alloc > 0 ? '₹' + c.alloc.toLocaleString('en-IN') : '—'}</td>
-    </tr>`;
-  }).join('');
-
-  document.getElementById('allocFoot').innerHTML = `
-    <tr style="background:var(--color-background-secondary);">
-      <td colspan="5" style="padding:8px;font-weight:500;font-size:14px;">Total allocated</td>
-      <td class="num" style="padding:8px;font-weight:500;">₹${totalAlloc.toLocaleString('en-IN')}</td>
-    </tr>`;
-
+function updateModeNote() {
   const notes = {
-    proportional: 'Proportional to target: allocates based on target weights across all categories, including overweight ones.',
-    need:         'Buy only underweight: zero allocation to at-target or overweight categories; all money goes where it is needed.'
+    proportional: 'Proportional to target: the remaining budget (after locks) is split across unlocked categories by their target weights, including overweight ones.',
+    need:         'Buy only underweight: the remaining budget (after locks) goes only to unlocked categories that are below target.'
   };
   document.getElementById('modeNote').textContent = notes[mode];
 }
 
-renderAllocator();
+// Full rebuild — used on structural changes (lock/unlock, add, delete, mode, init)
+function renderAll() {
+  const allocs = computeAllocations();
+  renderRows(allocs);
+  refreshSummary(allocs);
+  refreshFooter(allocs);
+  updateSumRow();
+  updateModeNote();
+  if (editingIdx !== null) focusEditInput(editingIdx);
+}
+
+// Update derived cells only — preserves focus while typing in % / name inputs
+function recalcDerived() {
+  const allocs = computeAllocations();
+  categories.forEach((c, i) => {
+    const row = document.querySelector(`tr[data-idx="${i}"]`);
+    if (!row) return;
+    row.querySelector('.gap-cell').innerHTML = gapHtml(allocs[i].gap);
+    row.querySelector('.status-cell').innerHTML = statusHtml(allocs[i]);
+    if (editingIdx !== i) row.querySelector('.invest-cell').innerHTML = investCellHtml(i, allocs[i], isLocked(c), false);
+  });
+  refreshSummary(allocs);
+  refreshFooter(allocs);
+  updateSumRow();
+}
+
+function renderInvestCell(i) {
+  const row = document.querySelector(`tr[data-idx="${i}"]`);
+  if (!row) return;
+  const allocs = computeAllocations();
+  row.querySelector('.invest-cell').innerHTML = investCellHtml(i, allocs[i], isLocked(categories[i]), editingIdx === i);
+}
+function focusEditInput(i) {
+  const inp = document.querySelector(`.invest-input[data-edit-idx="${i}"]`);
+  if (inp) { inp.focus(); inp.select(); }
+}
+
+// --- Lock editing ---
+function enterEdit(idx) {
+  const allocs = computeAllocations();
+  editingIdx = idx;
+  editVal = allocs[idx].alloc;
+  editError = null;
+  renderInvestCell(idx);
+  focusEditInput(idx);
+}
+function cancelEdit() {
+  if (editingIdx === null) return;
+  editingIdx = null;
+  editError = null;
+  renderAll();
+}
+function commitEdit(idx, raw) {
+  if (editingIdx !== idx) return;
+  const trimmed = String(raw).trim();
+  if (trimmed === '') { cancelEdit(); return; }
+  let val = Math.round(parseFloat(trimmed));
+  if (isNaN(val) || val < 0) val = 0;
+  const room = amount - sumLocked(idx);
+  if (val > room) {
+    editVal = val;
+    editError = 'Max lockable here: ₹' + room.toLocaleString('en-IN');
+    renderInvestCell(idx);
+    focusEditInput(idx);
+    return;
+  }
+  categories[idx].locked = val;
+  editingIdx = null;
+  editError = null;
+  applySliderMin();
+  saveState();
+  renderAll();
+}
+function unlock(idx) {
+  delete categories[idx].locked;
+  editingIdx = null;
+  editError = null;
+  applySliderMin();
+  saveState();
+  renderAll();
+}
+
+// Slider can never dip below the total locked — keeps the budget from being overcommitted
+function applySliderMin() {
+  const slider = document.getElementById('amountSlider');
+  const minLock = Math.max(MIN_AMOUNT, Math.ceil(sumLocked() / STEP) * STEP);
+  slider.min = minLock;
+  if (amount < minLock) {
+    amount = minLock;
+    slider.value = amount;
+    document.getElementById('amountDisplay').textContent = '₹' + amount.toLocaleString('en-IN');
+    saveState();
+  }
+}
+
+// --- Events ---
+document.getElementById('toggleRow').addEventListener('click', function(e) {
+  const btn = e.target.closest('[data-mode]');
+  if (!btn) return;
+  mode = btn.dataset.mode;
+  document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+  saveState();
+  renderAll();
+});
+
+document.getElementById('amountSlider').addEventListener('input', function() {
+  amount = parseInt(this.value);
+  document.getElementById('amountDisplay').textContent = '₹' + amount.toLocaleString('en-IN');
+  saveState();
+  recalcDerived();
+});
+
+document.getElementById('addRowBtn').addEventListener('click', function() {
+  categories.push({ name: 'New category', current: 0, target: 0 });
+  saveState();
+  renderAll();
+});
+
+const allocBody = document.getElementById('allocBody');
+
+allocBody.addEventListener('input', function(e) {
+  const el = e.target;
+  if (el.classList.contains('invest-input')) return; // handled on commit
+  const row = el.closest('tr');
+  if (!row) return;
+  const idx = parseInt(row.dataset.idx);
+  if (el.dataset.field === 'name')    categories[idx].name    = el.value;
+  if (el.dataset.field === 'current') categories[idx].current = parseFloat(el.value) || 0;
+  if (el.dataset.field === 'target')  categories[idx].target  = parseFloat(el.value) || 0;
+  saveState();
+  recalcDerived();
+});
+
+allocBody.addEventListener('click', function(e) {
+  const editBtn = e.target.closest('[data-edit]');
+  if (editBtn) { enterEdit(parseInt(editBtn.dataset.edit)); return; }
+  const lockBtn = e.target.closest('[data-lock-toggle]');
+  if (lockBtn) { unlock(parseInt(lockBtn.dataset.lockToggle)); return; }
+  const del = e.target.closest('.del-btn');
+  if (del) {
+    const idx = parseInt(del.closest('tr').dataset.idx);
+    categories.splice(idx, 1);
+    editingIdx = null;
+    applySliderMin();
+    saveState();
+    renderAll();
+  }
+});
+
+allocBody.addEventListener('keydown', function(e) {
+  if (!e.target.classList.contains('invest-input')) return;
+  if (e.key === 'Enter')  { e.preventDefault(); commitEdit(parseInt(e.target.dataset.editIdx), e.target.value); }
+  else if (e.key === 'Escape') { e.preventDefault(); cancelEdit(); }
+});
+
+allocBody.addEventListener('focusout', function(e) {
+  if (!e.target.classList.contains('invest-input')) return;
+  commitEdit(parseInt(e.target.dataset.editIdx), e.target.value);
+});
+
+// --- Init ---
+document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+applySliderMin();
+document.getElementById('amountSlider').value = amount;
+document.getElementById('amountDisplay').textContent = '₹' + amount.toLocaleString('en-IN');
+renderAll();
 </script>
